@@ -1,0 +1,39 @@
+@import '../../scss-variables/colors.scss';
+
+header {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 2fr 8fr;
+    height: 15px;
+    width: 100%;
+    background-color: $purple;
+    #logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 2;
+        h1 {
+            font-size: 0.3rem;
+            color: white;
+            font-weight: 400;
+        }
+    }
+    #header-nav {
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul {
+            display: flex;
+            gap: 5px;
+            li {
+                display: flex;
+                a {
+                    font-size: 0.3rem;
+                    color: white;
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+}

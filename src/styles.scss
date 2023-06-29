@@ -13,13 +13,17 @@
     list-style: none;
     text-decoration: none;
 }
-body{
+app-root{
     background-color: $gray;
     font-family: $font-family-fraset;
     color: $purple;
     display: grid;
     grid-template-columns: 1fr 2fr 8fr;
-    grid-template-rows: 15px 1fr;
-    height: 100vh;
+    grid-template-rows: 1fr;
+    height: 200vh;
     width: 100%;
+}
+app-aside-nav{
+    grid-column: 1;
+    grid-row: 2;
 }

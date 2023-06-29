@@ -1,0 +1,14 @@
+<header>
+    <div id="logo">
+        <h1>Huilen Solis</h1>
+    </div>
+    <nav id="header-nav">
+        <ul>
+           <li *ngFor="let item of navList">
+                <a href="item.url">
+                    {{item.title}}
+                </a>
+           </li>
+        </ul>
+    </nav>
+</header>
