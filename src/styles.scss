@@ -13,17 +13,18 @@
     list-style: none;
     text-decoration: none;
 }
+h1, h2, h3, h4, h5, h6, span{
+    font-family: $font-family-fraset;
+}
+a, p{
+    font-family: $font-family-raleway;
+}
 app-root{
     background-color: $gray;
-    font-family: $font-family-fraset;
     color: $purple;
     display: grid;
     grid-template-columns: 1fr 2fr 8fr;
     grid-template-rows: 1fr;
     height: 200vh;
     width: 100%;
-}
-app-aside-nav{
-    grid-column: 1;
-    grid-row: 2;
 }

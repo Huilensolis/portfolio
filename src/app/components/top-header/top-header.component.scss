@@ -4,7 +4,7 @@ header {
     position: fixed;
     display: grid;
     grid-template-columns: 1fr 2fr 8fr;
-    height: 15px;
+    height: 80px;
     width: 100%;
     background-color: $purple;
     #logo {
@@ -13,7 +13,7 @@ header {
         align-items: center;
         grid-column: 2;
         h1 {
-            font-size: 0.3rem;
+            font-size: 2rem;
             color: white;
             font-weight: 400;
         }
@@ -25,13 +25,14 @@ header {
         align-items: center;
         ul {
             display: flex;
-            gap: 5px;
+            gap: 50px;
             li {
                 display: flex;
                 a {
-                    font-size: 0.3rem;
+                    font-size: 1.5rem;
                     color: white;
-                    font-weight: 200;
+                    font-weight: 500;
+                    transition: 0.5s;
                 }
             }
         }
