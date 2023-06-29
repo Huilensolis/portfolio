@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import './app/scss-variables/colors';
+@import './app/scss-variables/fonts';
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+    :hover{
+        outline: none;
+    }
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: $gray;
+    font-family: $font-family-fraset;
+    color: $purple;
+    display: grid;
+    grid-template-columns: 1fr 2fr 8fr;
+    grid-template-rows: 15px 1fr;
+    height: 100vh;
+    width: 100%;
+}
