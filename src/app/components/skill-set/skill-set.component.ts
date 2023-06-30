@@ -9,12 +9,15 @@ export class SkillSetComponent {
     LanguagesList = [
         {
             name: 'React',
+            important: true,
         },
         {
-            name: 'Angular'
+            name: 'Angular',
+            important: true,
         },
         {
             name: 'Typescript',
+            important: true,
         },
         {
             name: 'Javascript',

@@ -6,7 +6,7 @@
         <section class="language-list">
             <h2>Languages</h2>
             <ul>
-                <li *ngFor="let language of LanguagesList" [class.backend]="language.backend">
+                <li *ngFor="let language of LanguagesList" [class.backend]="language.backend" [class.important]="language.important">
                     <span>{{language.name}}</span>
                 </li>
             </ul>
@@ -15,7 +15,7 @@
         <section class="tools-list">
             <h2>Tools</h2>
             <ul>
-                <li *ngFor="let Tool of tools">
+                <li *ngFor="let Tool of tools" class="tool-item">
                     <span>{{Tool.name}}</span>
                 </li>
             </ul>

@@ -26,7 +26,13 @@ ul{
         border-radius: 12px;
         padding: 5px 20px;
         &.backend{
-            background-color: #62c483;
+            background-color: $green;
+        }
+        &.important{
+            background-color: $clear-purple;
+        }
+        &.tool-item{
+            background-color: $pink-orange;
         }
         span{
             padding: 5px 0 0 0;
