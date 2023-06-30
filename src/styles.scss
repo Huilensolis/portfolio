@@ -1,30 +1,45 @@
-@import './app/scss-variables/colors';
-@import './app/scss-variables/fonts';
+@import "./app/scss-variables/colors";
+@import "./app/scss-variables/fonts";
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     border: none;
-    :hover{
+    :hover {
         outline: none;
     }
     outline: none;
     list-style: none;
     text-decoration: none;
 }
-h1, h2, h3, h4, h5, h6, span{
-    font-family: $font-family-fraset;
+html {
+    scroll-behavior: smooth;
 }
-a, p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    font-family: $font-family-epilogue;
+}
+a,
+p {
     font-family: $font-family-raleway;
 }
-app-root{
-    background-color: $gray;
+.section-title{
+    font-size: 3rem;
     color: $purple;
+}
+app-root {
+    background-color: $gray;
+    color: $white;
     display: grid;
-    grid-template-columns: 1fr 2fr 8fr;
+    grid-template-columns: 1fr 1fr 8fr;
     grid-template-rows: 1fr;
-    height: 200vh;
+    height: 100%;
     width: 100%;
+    padding-right: 100px;
 }

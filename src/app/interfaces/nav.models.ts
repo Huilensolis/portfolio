@@ -1,4 +1,5 @@
 export interface NavItem {
     title: string,
-    url: string
+    url: string,
+    isActive: boolean,
 }

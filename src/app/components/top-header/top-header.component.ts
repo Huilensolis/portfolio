@@ -1,31 +1,38 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NavItem } from '../../interfaces/nav.models'
+import { NavService } from 'src/app/services/nav.service';
+import { Subscription } from 'rxjs';
+
 @Component({
   selector: 'app-top-header',
   templateUrl: './top-header.component.html',
   styleUrls: ['./top-header.component.scss']
 })
 export class TopHeaderComponent {
-    navList: NavItem[] = [
-        {
-            title: 'home',
-            url: '/'
-        },
-        {
-            title: 'about',
-            url: '/'
-        },
-        {
-            title: 'skillset',
-            url: '/'
-        },
-        {
-            title: 'project',
-            url: '/'
-        },
-        {
-            title: 'contact',
-            url: '/'
-        }
-    ]
+    navItems: NavItem[] = [];
+
+    private navItemsSubsctiption!: Subscription;
+    constructor(private navService: NavService){
+
+    }
+
+    ngOnInit(): void{
+        this.navItems = this.navService.getNavItems()
+
+        this.navItemsSubsctiption = this.navService.getSubsctiption().subscribe(() => {
+            this.updateItems()
+        })
+    }
+
+    private updateItems(){
+        this.navItems = this.navService.getNavItems()
+    }
+
+    SetNavItemsState(title: any){
+        this.navService.setActive(title)
+    }
+
+    ngOnDestroy(): void{
+        this.navItemsSubsctiption.unsubscribe();
+    }
 }

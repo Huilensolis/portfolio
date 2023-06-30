@@ -1,0 +1,38 @@
+@import '../../scss-variables/full-height';
+@import '../../scss-variables/colors';
+.section-container{
+    height: $height;
+    main{
+        display: flex;
+        .language-list{
+            width: 50%;
+        }
+        section{
+            h2{
+                margin: 20px 0;
+            }
+        }
+    }
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 12px;
+        padding: 5px 20px;
+        &.backend{
+            background-color: #62c483;
+        }
+        span{
+            padding: 5px 0 0 0;
+            color: $gray;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+    }
+}

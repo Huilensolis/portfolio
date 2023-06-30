@@ -4,8 +4,8 @@
     </div>
     <nav id="header-nav">
         <ul>
-           <li *ngFor="let item of navList">
-                <a href="{{item.url}}">
+           <li *ngFor="let item of navItems">
+                <a href="{{'#' + item.title}}" (click)="SetNavItemsState(item.title)" >
                     {{item.title}}
                 </a>
            </li>

@@ -1,0 +1,13 @@
+@import '../../scss-variables/full-height';
+section{
+    height: 100%;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    p{
+        font-size: 1.5rem;
+        line-height: 30px;
+        font-weight: 500;
+    }
+}

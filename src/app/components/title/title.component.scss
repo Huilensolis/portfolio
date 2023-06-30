@@ -1,0 +1,28 @@
+@import '../../scss-variables/colors';
+@import '../../scss-variables/full-height';
+h1{
+    font-size: 4rem;
+    color: $white;
+    animation: 10s coloring infinite;
+    span{
+        text-decoration: underline;
+    }
+}
+header{
+    height: $height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes coloring{
+    0%{
+        color: white;
+    }
+    50%{
+        color: rgb(171, 166, 251);
+    }
+    100%{
+        color: white;
+    }
+}

@@ -1,4 +1,23 @@
 app-aside-nav{
     grid-column: 1;
-    grid-row: 2;
+    position: sticky;
+    top: 80px; // the header height is 80px
+    height: calc(100vh - 80px); // we substract the header height
+}
+app-top-header{
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+app-title{
+    grid-column: 3 / 4;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    height: calc(100vh + 80px);
+}
+app-about{
+    grid-column: 3 / 4;
+}
+app-skill-set{
+    grid-column: 3 / 4;
 }

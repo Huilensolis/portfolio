@@ -1,0 +1,25 @@
+<section class="section-container">
+    <h1 class="section-title" id="skillset">Skillset</h1>
+
+    <main>
+
+        <section class="language-list">
+            <h2>Languages</h2>
+            <ul>
+                <li *ngFor="let language of LanguagesList" [class.backend]="language.backend">
+                    <span>{{language.name}}</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="tools-list">
+            <h2>Tools</h2>
+            <ul>
+                <li *ngFor="let Tool of tools">
+                    <span>{{Tool.name}}</span>
+                </li>
+            </ul>
+        </section>
+        
+    </main>
+</section>
