@@ -7,7 +7,6 @@ import { TopHeaderComponent } from './components/top-header/top-header.component
 import { TitleComponent } from './components/title/title.component';
 import { AboutComponent } from './components/about/about.component';
 import { SkillSetComponent } from './components/skill-set/skill-set.component';
-import { SkillTemplateComponent } from './components/skill-template/skill-template.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +16,6 @@ import { SkillTemplateComponent } from './components/skill-template/skill-templa
     TitleComponent,
     AboutComponent,
     SkillSetComponent,
-    SkillTemplateComponent
   ],
   imports: [
     BrowserModule
