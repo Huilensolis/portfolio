@@ -1,25 +1,32 @@
-@import '../../scss-variables/colors.scss';
-@import '../../scss-variables/page-pading';
+@import "../../scss-variables/colors.scss";
+@import "../../scss-variables/page-pading";
 header {
     position: fixed;
-    left: 0;
-    padding: $root-padding;
+    right: 0;
+    top: 0;
     display: flex;
-    justify-content: end;
-    height: 80px;
-    width: 100vw;
+    flex-direction: column;
+    height: 100vh;
+    width: 80px;
     background-color: $black;
-    border-bottom: 2px solid $clear-black;
     #header-nav {
         grid-column: 2 / 3;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 100%;
         ul {
             display: flex;
+            flex-direction: column;
+            justify-content: center;
             gap: 50px;
+            height: 100%;
+            :last-child{
+                margin-bottom: 0;
+            }
             li {
-                display: flex;
+                transform: rotate(90deg);
+                margin-bottom: 20px;
                 a {
                     border-radius: 12px;
                     height: 100%;
@@ -29,7 +36,7 @@ header {
                     color: $clear-black;
                     font-weight: 500;
                     transition: 0.5s;
-                    &:hover{
+                    &:hover {
                         color: $white;
                     }
                 }
