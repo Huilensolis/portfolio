@@ -1,6 +1,6 @@
 <div class="project-item">
     <section class="links">
-        <a href="{{ project.deployLink }}" *ngIf="project.deployLink"
+        <a href="{{ project.deployLink }}" *ngIf="project.deployLink" target="_blank"
             >deploy
             <svg
                 fill="none"
@@ -17,7 +17,7 @@
                 ></path>
             </svg>
         </a>
-        <a href="{{ project.deployLink }}" *ngIf="project.githubLink"
+        <a href="{{ project.githubLink }}" *ngIf="project.githubLink" target="_blank"
             >repository
             <svg
                 stroke="currentColor"

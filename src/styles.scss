@@ -26,31 +26,22 @@ body {
 
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-span {
-    font-family: $font-family-epilogue;
-}
-a,
-p {
+
+
     font-family: $font-family-raleway;
 }
 .section-title {
-    font-size: 3rem;
-    color: $clear-purple;
+    font-size: 4rem;
 }
 app-root {
     background-color: $gray;
     color: $white;
-    display: grid;
-    grid-template-columns: 1fr 1fr 8fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 8fr;
+    // grid-template-rows: 1fr;
     height: 100%;
     width: 100%;
-    padding-right: 100px;
+    padding: 0 100px;
 }

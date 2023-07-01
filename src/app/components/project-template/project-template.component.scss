@@ -1,6 +1,6 @@
-@import '../../scss-variables/colors';
+@import "../../scss-variables/colors";
 
-.project-item{
+.project-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -12,8 +12,8 @@
     border-radius: 12px;
     transition: 0.5s;
     padding: 10px;
-    .links{
-        a{
+    .links {
+        a {
             display: flex;
             justify-content: end;
             align-items: center;
@@ -21,7 +21,8 @@
             font-size: 2rem;
             width: 100%;
             transition: 1.5s;
-            svg{
+            height: 3rem;
+            svg {
                 fill: $gray;
                 height: 2rem;
                 width: 2rem;
@@ -30,41 +31,40 @@
             }
         }
     }
-    &:hover{
-        background-color: $crlear-yellow-green;
-        .links{
-            a{
+    &:hover {
+        background-color: $clear-yellow-green;
+        .links {
+            a {
                 font-size: 3rem;
-                svg{
-                    width: 3rem;
+                svg {
                     height: 3rem;
                 }
             }
         }
-        main{
-            h3{
+        main {
+            h3 {
                 font-size: 3.2rem;
             }
         }
     }
-    main{
-        h3{
+    main {
+        h3 {
             width: 100%;
             text-align: start;
             font-size: 3rem;
             color: #232524;
             transition: 1.5s;
         }
-        header{
+        header {
             width: 100%;
-            ul{
+            ul {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 6px;
                 width: 100%;
                 line-height: 25px;
-                li{
-                    span{
+                li {
+                    span {
                         font-size: 2rem;
                         color: $gray;
                         font-weight: 500;

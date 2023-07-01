@@ -1,13 +1,25 @@
-@import '../../scss-variables/full-height';
-section{
+@import "../../scss-variables/full-height";
+@import "../../scss-variables/colors";
+section {
     height: 100%;
     margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    p{
+    width: 100%;
+    h1{
+        color: $white;
+    }
+    p {
+        background-color: $white;
+        border-radius: 24px;
+        padding: 20px;
+        span{
+            font-weight: 600;
+        }
         font-size: 1.5rem;
         line-height: 30px;
         font-weight: 500;
+        color: $gray;
     }
 }

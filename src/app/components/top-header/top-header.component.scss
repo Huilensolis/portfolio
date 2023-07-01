@@ -1,11 +1,13 @@
 @import '../../scss-variables/colors.scss';
-
+@import '../../scss-variables/page-pading';
 header {
     position: fixed;
-    display: grid;
-    grid-template-columns: 3fr 8fr;
+    left: 0;
+    padding: $root-padding;
+    display: flex;
+    justify-content: space-between;
     height: 80px;
-    width: 100%;
+    width: 100vw;
     background-color: $purple;
     #logo {
         display: flex;

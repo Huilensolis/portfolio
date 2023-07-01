@@ -8,19 +8,19 @@ import { Component } from '@angular/core';
 export class SkillSetComponent {
     LanguagesList = [
         {
-            name: 'React',
+            name: 'react',
             important: true,
         },
         {
-            name: 'Angular',
+            name: 'angular',
             important: true,
         },
         {
-            name: 'Typescript',
-            important: true,
+            name: 'javascript',
         },
         {
-            name: 'Javascript',
+            name: 'typescript',
+            important: true,
         },
         {
             name: 'HTML5',
@@ -29,34 +29,36 @@ export class SkillSetComponent {
             name: 'CSS3',
         },
         {
-            name: 'Node',
+            name: 'node',
             backend: true,
         },
         {
-            name: 'Express',
+            name: 'express',
             backend: true,
         },
         {
-            name: 'Sequelize',
+            name: 'sequelize',
             backend: true,
         },
         {
-            name: 'Passport-JWT',
+            name: 'passport-JWT',
             backend: true,
-        }
-    ]
-    tools = [
+        },
         {
             name: 'Git',
+            tool: true
         },
         {
             name: 'Github',
+            tool: true
         },
         {
             name: 'Linux',
+            tool: true
         },
         {
             name: 'Npm',
+            tool: true
         },
     ]
 }
