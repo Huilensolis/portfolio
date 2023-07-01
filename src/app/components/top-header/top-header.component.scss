@@ -21,6 +21,10 @@ header {
             li {
                 display: flex;
                 a {
+                    border-radius: 12px;
+                    height: 100%;
+                    width: 100%;
+                    padding: 10px;
                     font-size: 1.5rem;
                     color: $clear-black;
                     font-weight: 500;

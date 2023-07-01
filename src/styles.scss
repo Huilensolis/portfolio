@@ -10,6 +10,9 @@
         outline: none;
     }
     outline: none;
+    :focus{
+        outline: 4px solid $white;
+    }
     list-style: none;
     text-decoration: none;
 }
