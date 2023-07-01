@@ -5,21 +5,11 @@ header {
     left: 0;
     padding: $root-padding;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     height: 80px;
     width: 100vw;
     background-color: $black;
-    #logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        grid-column: 1;
-        h1 {
-            font-size: 2rem;
-            color: white;
-            font-weight: 700;
-        }
-    }
+    border-bottom: 2px solid $clear-black;
     #header-nav {
         grid-column: 2 / 3;
         display: flex;
@@ -32,12 +22,11 @@ header {
                 display: flex;
                 a {
                     font-size: 1.5rem;
-                    color: white;
+                    color: $clear-black;
                     font-weight: 500;
                     transition: 0.5s;
                     &:hover{
-                        // color: $darker-white;
-                        color: $clear-purple;
+                        color: $white;
                     }
                 }
             }
