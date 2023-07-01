@@ -17,8 +17,8 @@ ul {
     li {
         transition: 0.5s;
         width: 100%;
-        border-radius: 24px;
-        background-color: $blue;
+        border-radius: 12px;
+        background-color: $white;
         &.backend {
             background-color: $yellow-green;
             &:hover{
@@ -27,12 +27,14 @@ ul {
         }
         &.important {
             background-color: $purple;
+
             &:hover{
                 background-color: $clear-purple;
             }
         }
         &.tool {
-            background-color: $pink-orange;
+            background-color: $white;
+
             &:hover{
                 background-color: $clear-pink-orange;
             }

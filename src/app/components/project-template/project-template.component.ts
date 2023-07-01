@@ -11,7 +11,10 @@ export class ProjectTemplateComponent {
         description: string,
         githubLink: string,
         deployLink?: string,
-        technologies?: string[],
+        technologies: string[],
     }
-
+    technologyList: string | undefined = undefined
+    ngOnInit(){
+        this.technologyList = this.project?.technologies.join(', ')
+    }
 }

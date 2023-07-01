@@ -36,11 +36,7 @@
     <main>
         <header>
             <h3>{{ project.title }}</h3>
-            <ul>
-                <li *ngFor="let technology of project.technologies">
-                    <span> {{ technology }} </span>
-                </li>
-            </ul>
+            <span> {{ technologyList }} </span>
         </header>
     </main>
 </div>
