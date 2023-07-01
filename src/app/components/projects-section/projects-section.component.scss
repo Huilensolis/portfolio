@@ -2,12 +2,14 @@ section{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 50px;
     main{
         ul{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: 1fr 1fr 1fr;
             gap: 10px;
+            height: auto;
             li{
                 display: flex;
                 width: 100%;

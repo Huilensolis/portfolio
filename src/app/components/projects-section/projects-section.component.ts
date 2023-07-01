@@ -10,7 +10,7 @@ export class ProjectsSectionComponent {
         {
             title: 'Library API REST',
             description: 'This is a project description',
-            githubLink: '',
+            githubLink: 'a',
             technologies: ['node JS', 'express', 'sequelize', 'passport', 'JWT']
         },
         {
