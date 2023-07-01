@@ -8,7 +8,10 @@
     gap: 5px;
     width: 100%;
     height: 100%;
-    background-color: $yellow-green;
+    background-image: radial-gradient(circle farthest-corner at top left, #C0F679 36%, #86F64F 36%);
+    background-position: right bottom;
+    background-size: 300%;
+    background-repeat: no-repeat;
     border-radius: 12px;
     transition: 0.5s;
     padding: 10px;
@@ -32,7 +35,7 @@
         }
     }
     &:hover {
-        background-color: $clear-yellow-green;
+        background-size: 100%;
         .links {
             a {
                 font-size: 3rem;
