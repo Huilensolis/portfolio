@@ -20,6 +20,9 @@ ul {
         border-radius: 22px;
         border: 2px solid #333;
         padding: 50px;
+        &:hover{
+            background-color: #333;
+        }
         &.backend {
             border-color: $yellow-green;
             animation: green-border infinite 10s;
