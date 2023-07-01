@@ -54,19 +54,30 @@ nav {
             grid-area: 2 / 2 / 2 / 4;
         }
         :not(:first-child) {
-            a{
-                background-color: $purple;
+            a {
+                background-color: $black;
+                background: radial-gradient(
+                    circle farthest-corner at top left,
+                    $purple 45%,
+                    $black 45%
+                );
+                background-repeat: no-repeat;
+                background-size: 400%;
+                background-position: right bottom;
             }
             &:hover {
-                a{
-                    transition: 0.5s;
-                    background-color: $black;
+                a {
+                    transition: 1s;
+                    background-size: 450%;
+                    background-position: left top;
                     border-color: $white;
-                    span{
-                        color: $white;
+                    span {
+                        transition: 1.2s;
+                        color: $black;
                     }
-                    svg{
-                        color: $white;
+                    svg {
+                        transition: 1s;
+                        color: $black;
                     }
                 }
             }
@@ -90,10 +101,10 @@ nav {
                 span {
                     font-size: 3rem;
                     display: inline-block;
-                    color: $black;
+                    color: $white;
                 }
                 svg {
-                    color: $black;
+                    color: $white;
                     height: 3rem;
                 }
             }
