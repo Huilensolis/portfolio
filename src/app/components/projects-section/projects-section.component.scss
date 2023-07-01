@@ -1,0 +1,36 @@
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    main{
+        ul{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 10px;
+            li{
+                display: flex;
+                width: 100%;
+            }
+            :first-child{
+                grid-area: 1 span / 3 span;
+                width: 100%;
+            }
+            :nth-child(2){
+                grid-column: 4 / 5;
+                grid-row: 1 / 2;
+                grid-area: 2 span / 1 span;
+            }
+            :nth-child(4){
+                grid-column: 2 span;
+            }
+            :nth-child(5){
+                grid-column: 2 span;
+
+            }
+            :nth-child(6){
+                grid-column: 2 span;
+            }
+        }
+    }
+}

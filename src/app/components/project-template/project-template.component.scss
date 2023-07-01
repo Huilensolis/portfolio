@@ -1,0 +1,76 @@
+@import '../../scss-variables/colors';
+
+.project-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: $yellow-green;
+    border-radius: 12px;
+    transition: 0.5s;
+    padding: 10px;
+    .links{
+        a{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            color: $gray;
+            font-size: 2rem;
+            width: 100%;
+            svg{
+                fill: $gray;
+                height: 2rem;
+                width: 2rem;
+                font-size: 2rem;
+            }
+        }
+    }
+    &:hover{
+        background-color: $crlear-yellow-green;
+    }
+    main{
+        h3{
+            width: 100%;
+            text-align: start;
+            font-size: 1.5rem;
+            color: #232524;
+        }
+        header{
+            width: 100%;
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 6px;
+                width: 100%;
+                line-height: 25px;
+                li{
+                    span{
+                        color: $gray;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        .buttons-container{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            a{
+                margin: 7px 0;
+                background-color: $gray;
+                border-radius: 12px;
+                padding: 10px 20px;
+                transition: 0.5s;
+                border: 3px solid transparent;
+                cursor: pointer;
+                &:hover{
+                    border: 3px solid $white;
+                }
+            }
+        }
+    }
+}

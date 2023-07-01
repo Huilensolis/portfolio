@@ -1,0 +1,13 @@
+<section class="section-container" id="project">
+    <h1 class="section-title">Projects</h1>
+
+    <main>
+
+        <ul>
+            <li *ngFor="let project of projectList">
+                <app-project-template [project]="project" />
+            </li>
+        </ul>
+
+    </main>
+</section>
