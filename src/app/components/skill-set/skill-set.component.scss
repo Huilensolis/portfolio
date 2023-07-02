@@ -110,6 +110,7 @@ ul li {
     }
     padding: 0;
     background-color: transparent;
+    background-color: $gray;
     background-image: radial-gradient(
         circle farthest-side at center center,
         #ffffff 1%,
@@ -125,10 +126,12 @@ ul li {
     background-size: cover;
     animation: moveGradient infinite 40s;
     &.important{
-        background-image: radial-gradient(circle farthest-corner at center center, #AB82F3 1%, #000000 56%);
+        background-color: $gray;
+        background-image: radial-gradient(circle farthest-corner at center center, #AB82F3 1%, $gray 56%);
         animation: moveGradient infinite 10s;
     }
     &.backend{
+        background-color: $gray;
         background-image: radial-gradient(circle farthest-corner at center center, #86F64F 0%, #000000 56%);
         animation: moveGradient infinite 25s;
     }
@@ -145,10 +148,6 @@ ul li {
     75% {
         background-size: 100%;
         background-position: left center;
-    }
-    95% {
-        background-size: 200%;
-        background-position: center center;
     }
     100% {
         background-size: 0%;
