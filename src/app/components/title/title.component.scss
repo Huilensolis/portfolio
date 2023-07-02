@@ -66,25 +66,18 @@ nav {
                 background-color: $black;
                 // background-color: transparent;
             }
-            &:hover {
-                // background-image: radial-gradient(
-                //     circle farthest-side at center center,
-                //     $white 1%,
-                //     $white 56%
-                // );
+            &:not(h2):hover {
+                transition: 0.5s;
                 animation-play-state: paused;
+                background-image: none;
+                background-color: $purple;
                 a {
-                    height: 100%;
-                    width: 100%;
                     transition: 0.5s;
-                    border: 4px solid $purple;
                     span {
                         transition: 0.5s;
-                        font-size: 3.3rem;
                     }
                     svg {
                         transition: 0.5s;
-                        height: 3.4rem;
                     }
                 }
             }
@@ -104,9 +97,9 @@ nav {
                 text-align: end;
                 height: 3.4rem;
                 padding: 10px;
-                width: calc(100% - 2px);
-                height: calc(100% - 2px);
-                border-radius: 24px;
+                width: calc(100% - 8px);
+                height: calc(100% - 8px);
+                border-radius: 21px;
                 border-width: 2px solid transparent;
                 span {
                     z-index: 2;
@@ -137,11 +130,11 @@ nav {
 
 // border aniamtion
 .menu-nav-item {
-    background-color: transparent;
+    background-color: $gray;
     background-image: radial-gradient(
         circle farthest-side at center center,
         #ffffff 1%,
-        $black 56%
+        $gray 56%
     );
     background-repeat: no-repeat;
     background-position: center center;
