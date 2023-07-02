@@ -84,7 +84,7 @@ ul li {
     background-image: radial-gradient(
         circle farthest-side at center center,
         #ffffff 1%,
-        $black 56%
+        $gray 56%
     );
     background-repeat: no-repeat;
     background-position: center center;
@@ -102,8 +102,8 @@ ul li {
     }
     &.backend{
         background-color: $gray;
-        background-image: radial-gradient(circle farthest-corner at center center, #86F64F 0%, #000000 56%);
-        animation: moveGradient infinite 25s;
+        background-image: radial-gradient(circle farthest-corner at center center, #86F64F 0%, $gray 56%);
+        animation: moveGradient infinite 20s;
     }
 }
 @keyframes moveGradient {
