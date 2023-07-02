@@ -55,9 +55,9 @@ nav {
         :not(:first-child) {
             a {
                 // background-color: $black;
-                background-image: radial-gradient(circle farthest-corner at top right, #AB82F3 58%, #FFFFFF 58%);
+                background-image: radial-gradient(circle farthest-corner at top right, $purple 58%, $white 58%);
                 background-repeat: no-repeat;
-                background-size: 350%;
+                background-size: 700%;
                 background-position: left bottom;
             }
             &:not(h2):hover {
