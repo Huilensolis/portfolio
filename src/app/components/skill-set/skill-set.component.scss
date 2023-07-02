@@ -22,14 +22,6 @@ ul {
         &:hover {
             background-color: #333;
         }
-        &.backend {
-            border-color: $yellow-green;
-            animation: green-border infinite 10s;
-        }
-        &.important {
-            border-color: $purple;
-            animation: pruple-border infinite 10s;
-        }
         p {
             color: $white;
             font-weight: 600;
@@ -64,28 +56,6 @@ ul {
     }
     :nth-child(12) {
         grid-column: 1 / 3;
-    }
-}
-@keyframes green-border {
-    0% {
-        border-color: rgba(135, 246, 79, 0.122);
-    }
-    50% {
-        border-color: rgba(135, 246, 79, 0.369);
-    }
-    100% {
-        border-color: rgba(135, 246, 79, 0.122);
-    }
-}
-@keyframes pruple-border {
-    0% {
-        border-color: rgba(171, 130, 243, 0.369);
-    }
-    50% {
-        border-color: rgba(171, 130, 243, 0.122);
-    }
-    100% {
-        border-color: rgba(171, 130, 243, 0.369);
     }
 }
 
