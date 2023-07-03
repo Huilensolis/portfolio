@@ -64,9 +64,8 @@ nav {
                 background-position: left bottom;
             }
             &:not(h2):hover {
-                transition: 0.5s;
                 a {
-                    transition: 1s;
+                    transition: 0.5s;
                     background-size: 100%;
                     span {
                         transition: 0.5s;
@@ -110,17 +109,3 @@ nav {
         }
     }
 }
-
-@keyframes coloring {
-    0% {
-        color: white;
-    }
-    50% {
-        color: rgb(171, 166, 251);
-    }
-    100% {
-        color: white;
-    }
-}
-
-// border aniamtion
