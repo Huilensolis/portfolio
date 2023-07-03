@@ -1,5 +1,4 @@
 @import "./app/scss-variables/colors";
-@import "./app/scss-variables/fonts";
 
 * {
     box-sizing: border-box;
@@ -10,7 +9,7 @@
         outline: none;
     }
     outline: none;
-    :focus{
+    :focus {
         outline: 4px solid $white;
     }
     list-style: none;
@@ -30,8 +29,9 @@ body {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 
-
-    font-family: $font-family-raleway;
+    font-family: "Epilogue", sans-serif;
+    font-family: "Raleway", sans-serif;
+    font-family: "Syne", sans-serif;
 }
 .section-title {
     font-size: 4rem;
