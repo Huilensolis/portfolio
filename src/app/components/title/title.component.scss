@@ -43,7 +43,7 @@ nav {
                         width: 100%;
                         text-align: start;
                         font-size: 3rem;
-                        font-weight: 800;
+                        font-weight: 700;
                         color: $purple;
                     }
                 }
@@ -57,21 +57,26 @@ nav {
         }
         :not(:first-child) {
             a {
-                // background-color: $black;
-                background-image: radial-gradient(circle farthest-corner at top right, $purple 58%, $white 58%);
-                background-repeat: no-repeat;
-                background-size: 700%;
-                background-position: left bottom;
+                // // background-color: $black;
+                // background-image: radial-gradient(circle farthest-corner at top right, $purple 58%, $white 58%);
+                // background-repeat: no-repeat;
+                // background-size: 700%;
+                // background-position: left bottom;
+                background-color: $gray;
             }
             &:not(h2):hover {
                 a {
                     transition: 0.5s;
-                    background-size: 100%;
+                    background-color: $purple;
                     span {
                         transition: 0.5s;
+                        color: $black;
+                        font-size: 3.5rem;
                     }
                     svg {
                         transition: 0.5s;
+                        color: $black;
+                        height: 3.5rem;
                     }
                 }
             }
@@ -98,11 +103,11 @@ nav {
                 span {
                     z-index: 2;
                     font-size: 3rem;
-                    color: $black;
+                    color: $white;
                 }
                 svg {
                     z-index: 2;
-                    color: $black;
+                    color: $white;
                     height: 3rem;
                 }
             }
