@@ -9,8 +9,9 @@
         outline: none;
     }
     outline: none;
-    :focus {
-        outline: 4px solid $white;
+    :focus-visible {
+        transition: 0s !important;
+        outline: 4px solid $blue;
     }
     list-style: none;
     text-decoration: none;
