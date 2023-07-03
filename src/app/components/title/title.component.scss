@@ -153,6 +153,14 @@ nav ul li:hover{
     a{
         transition: 0.5s;
         background-color: $gray;
+        span{
+            transition: inherit;
+            font-size: 3.5rem;
+        }
+        svg{
+            transition: inherit;
+            height: 50px;
+        }
     }
 }
 @keyframes moveGradient {
