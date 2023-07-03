@@ -10,36 +10,40 @@ header {
     width: 80px;
     background-color: $black;
     #header-nav {
-        grid-column: 2 / 3;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
         ul {
             display: flex;
-            flex-direction: column;
             justify-content: center;
-            gap: 50px;
+            align-items: center;
             height: 100%;
-            :last-child{
-                margin-bottom: 0;
+            transform: rotate(90deg);
+            :not(:last-child){
+                text-align: center;
             }
             li {
-                transform: rotate(90deg);
-                margin-bottom: 20px;
-                a {
-                    &.active{
+                width: calc(100%);
+                height: 80px;
+                &:hover {
+                    a{
                         color: $white;
                     }
-                    border-radius: 12px;
+                }
+                a {
+                    transition: 0.5s;
+                    padding: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     height: 100%;
                     width: 100%;
-                    padding: 10px;
-                    font-size: 1.5rem;
+                    border-radius: 12px;
+                    font-size: 1.7rem;
                     color: $clear-black;
                     font-weight: 500;
-                    transition: 0.5s;
-                    &:hover {
+                    &.active{
                         color: $white;
                     }
                 }
