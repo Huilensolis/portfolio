@@ -2,7 +2,7 @@
     <nav id="header-nav">
         <ul>
            <li *ngFor="let item of navItems">
-                <a href="{{'#' + item.title}}" (click)="SetNavItemsState(item.title)" >
+                <a href="{{'#' + item.title}}" (click)="SetNavItemsState(item.title)" [class.active]="item.title === actualSectionInNav" >
                     {{item.title}}
                 </a>
            </li>

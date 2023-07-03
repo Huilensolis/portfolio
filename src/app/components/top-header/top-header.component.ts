@@ -10,6 +10,7 @@ import { Subscription } from 'rxjs';
 })
 export class TopHeaderComponent {
     navItems: NavItem[] = [];
+    actualSectionInNav: string = '';
 
     private navItemsSubsctiption!: Subscription;
     constructor(private navService: NavService){
@@ -26,6 +27,10 @@ export class TopHeaderComponent {
 
     private updateItems(){
         this.navItems = this.navService.getNavItems()
+
+        let ActiveItem = this.navItems.find(item => item.isActive === true)
+        if(!ActiveItem) return
+        this.actualSectionInNav = ActiveItem?.title
     }
 
     SetNavItemsState(title: any){

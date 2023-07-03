@@ -28,7 +28,7 @@ export class NavService {
             isActive: false
         },
         {
-            title: 'project',
+            title: 'projects',
             url: '/',
             isActive: false
         },
@@ -47,7 +47,7 @@ export class NavService {
         return this.navItems;
     }
 
-    setActive(title: 'home' | 'about' | 'skillset' | 'project' | 'contact'): void{
+    setActive(title: 'home' | 'about' | 'skillset' | 'projects' | 'contact'): void{
 
         this.navItems.forEach(nav => {
             nav.isActive = false;
@@ -57,6 +57,7 @@ export class NavService {
         if(indexOfItem > -1){
             this.navItems[indexOfItem].isActive = true;
         }
+        this.navItemsSubject.next(this.navItems);
     }
 
 }
