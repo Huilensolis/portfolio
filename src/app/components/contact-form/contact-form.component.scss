@@ -71,7 +71,7 @@ main {
                     transition: 0.5s;
                     background-color: $clear-purple;
                     &:disabled{
-                        background-color: $clear-black;
+                        background-color: $disabled-button;
                     }
                     &.loading{
                         background-color: $clear-blue;
