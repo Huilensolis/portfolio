@@ -12,10 +12,6 @@ export class EmailJsService {
     e.preventDefault();
 
     const response = await new Promise((resolve, reject) => {
-        setTimeout(() => {
-            return resolve('a')
-        }, 10000);
-        return
         emailjs.sendForm('contact_service', 'contact_form', e.target as HTMLFormElement, 'qZSE9Hx6mqQWXh4yz')
         .then(response => {
             return resolve(response)
