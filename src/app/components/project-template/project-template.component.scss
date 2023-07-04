@@ -10,8 +10,8 @@
     height: 100%;
     background-image: radial-gradient(
         circle farthest-corner at top left,
-        #c0f679 36%,
-        #86f64f 36%
+        $clear-yellow-green 36%,
+        $yellow-green 36%
     );
     background-position: right bottom;
     background-size: 300%;
@@ -60,7 +60,7 @@
             width: 100%;
             text-align: start;
             font-size: 3rem;
-            color: #232524;
+            color: $black;
             transition: 1.5s;
         }
         header {
