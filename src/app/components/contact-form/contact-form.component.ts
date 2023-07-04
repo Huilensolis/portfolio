@@ -41,10 +41,6 @@ export class ContactFormComponent {
     async sendEmail(e: Event) {
         e.preventDefault();
 
-
-        this.displayAlertEvent();
-        return
-
         this.loading = true;
 
         this.emailJsService.sendEmail(e)

@@ -44,12 +44,9 @@
                     required
                     formControlName="message"
                 ></textarea>
-                <p class="error-p" *ngIf="!contactForm.get('message')?.valid && contactForm.get('message')?.touched && !contactForm.get('message')?.dirty">
-                    area required*
-                </p>
-                <p class="error-p" *ngIf="!contactForm.get('message')?.valid && contactForm.get('message')?.dirty">
-                    minimum length is 20 characters.
-                </p>
+                <p class="error-p" *ngIf="!contactForm.get('message')?.valid && (contactForm.get('message')?.touched || contactForm.get('message')?.dirty)">
+                    {{ contactForm.get('message')?.errors?.['required'] ? 'Area required*' : 'Minimum length is 20 characters.' }}
+                  </p>
             </section>
 
             <button
