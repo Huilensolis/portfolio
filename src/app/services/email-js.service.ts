@@ -8,15 +8,23 @@ export class EmailJsService {
 
   constructor() { }
 
-  sendEmail(e: Event){
+  async sendEmail(e: Event){
     e.preventDefault();
 
-    emailjs.sendForm('contact_service', 'contact_form', e.target as HTMLFormElement, 'qZSE9Hx6mqQWXh4yz')
-    .then(response => {
-        console.log(response);
+    const response = await new Promise((resolve, reject) => {
+        setTimeout(() => {
+            return resolve('a')
+        }, 10000);
+        return
+        emailjs.sendForm('contact_service', 'contact_form', e.target as HTMLFormElement, 'qZSE9Hx6mqQWXh4yz')
+        .then(response => {
+            return resolve(response)
+        })
+        .catch(error => {
+            return reject(error)
+        })
     })
-    .catch(error => {
-        console.error(error)
-    })
+
+    return response
   }
 }

@@ -1,24 +1,24 @@
-@import '../../scss-variables/colors';
+@import "../../scss-variables/colors";
 
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     height: 100vh;
     width: 100%;
-    .form-container{
+    .form-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        form{
+        form {
             display: flex;
             flex-direction: column;
             gap: 20px;
-            label{
+            label {
                 font-size: 2rem;
                 color: $clear-black;
             }
-            input{
+            input {
                 width: 100%;
                 border-radius: 8px;
                 padding: 10px;
@@ -27,25 +27,26 @@ main{
                 color: $white;
                 font-size: 1.6rem;
             }
-            .info{
+            .info {
                 width: 100%;
                 display: flex;
                 justify-content: flex-start;
                 align-items: flex-start;
                 gap: 20px;
-                .email-container, .username-container{
+                .email-container,
+                .username-container {
                     width: 100%;
                     display: flex;
                     flex-direction: column;
                     gap: 5px;
                 }
             }
-            .message-container{
+            .message-container {
                 display: flex;
                 flex-direction: column;
                 height: 100%;
                 gap: 5px;
-                textarea{
+                textarea {
                     resize: none;
                     height: 100%;
                     border-radius: 10px;
@@ -57,37 +58,84 @@ main{
                     color: $white;
                 }
             }
-            button{
-                &:disabled{
+            button {
+                &.loading{
+                    transition: 0.5s;
+                    background-color: $blue;
+                }
+                &:disabled {
+                    transition: 0.5s;
                     background-color: $gray;
                 }
+                &:hover{
+                    transition: 0.5s;
+                    background-color: $clear-purple;
+                    &.loading{
+                        background-color: $clear-blue;
+                    }
+                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 border-radius: 8px;
-                background-color: $white;
+                background-color: $purple;
                 width: 100%;
                 color: $black;
                 font-weight: 500;
                 font-size: 2rem;
-                padding: 10px;
-                svg{
+                padding: 5px;
+                gap: 10px;
+                svg {
+                    display: none;
+                    &.active {
+                        display: inline-block;
+                        animation: rotation 2s infinite linear;
+                    }
                     height: 100%;
+                    color: $white;
+                }
+                p {
+                    display: none;
+                    &.send{
+                        display: inline-block;
+                    }
+                    &.loading{
+                        color: $white;
+                        font-style: italic;
+                        font-weight: 200;
+                        display: inline-block;
+                    }
                 }
             }
         }
-        .mail-icon-container{
+        .mail-icon-container {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100%;
             width: 100%;
             grid-column: 2 / 3;
-            svg{
+            svg {
                 width: 500px;
                 height: 500px;
             }
         }
     }
-    .error-p{
+    .error-p {
         color: $pink-orange;
         font-size: 1.2rem;
+    }
+}
+.displayed {
+    position: absolute;
+    transition: 1s;
+    top: calc(10px + 0%);
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
     }
 }
