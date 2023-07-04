@@ -11,6 +11,7 @@ import { ProjectsSectionComponent } from './components/projects-section/projects
 import { ProjectTemplateComponent } from './components/project-template/project-template.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { AlertComponent } from './components/alert/alert.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { AlertComponent } from './components/alert/alert.component';
     ProjectTemplateComponent,
     ContactFormComponent,
     AlertComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
