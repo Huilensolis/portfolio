@@ -126,11 +126,6 @@ main {
         font-size: 1.2rem;
     }
 }
-.displayed {
-    position: absolute;
-    transition: 1s;
-    top: calc(10px + 0%);
-}
 @keyframes rotation {
     from {
         transform: rotate(0deg);

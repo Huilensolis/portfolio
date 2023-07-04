@@ -9,4 +9,5 @@ export class AlertComponent {
     @Input() message!: string;
     @Input() title!: string;
     @Input() success!: boolean;
+    @Input() display: boolean = false;
 }
