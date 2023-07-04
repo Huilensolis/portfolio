@@ -37,15 +37,13 @@ body, textarea, input{
 }
 .section-title {
     font-size: 4rem;
+    margin-bottom: 10px;
 }
 app-root {
     background-color: $black;
     color: $white;
     display: flex;
     flex-direction: column;
-    // display: grid;
-    // grid-template-columns: 1fr 1fr 8fr;
-    // grid-template-rows: 1fr;
     height: 100%;
     width: 100%;
     padding: 0 100px;
