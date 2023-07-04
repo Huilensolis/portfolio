@@ -4,7 +4,7 @@
         <form (submit)="sendEmail($event)" #contactForm="ngForm">
             <section class="info">
                 <section class="username-container">
-                    <label for="username">name</label>
+                    <label for="username">name*</label>
                     <input
                         type="text"
                         name="user_name"
@@ -21,7 +21,7 @@
                 </section>
 
                 <section class="email-container">
-                    <label for="email">email</label>
+                    <label for="email">email*</label>
                     <input
                         type="email"
                         name="user_email"
@@ -38,7 +38,7 @@
             </section>
 
             <section class="message-container">
-                <label for="message">message</label>
+                <label for="message">message*</label>
                 <textarea
                     name="message"
                     id="message"
@@ -52,7 +52,11 @@
                 </p>
             </section>
 
-            <button type="submit" [disabled]="!contactForm.valid" [class.loading]="loading === true">
+            <button
+                type="submit"
+                [disabled]="!contactForm.valid"
+                [class.loading]="loading === true"
+            >
                 <p [class.loading]="loading === true">loading</p>
                 <p [class.send]="loading === false">send</p>
                 <svg
