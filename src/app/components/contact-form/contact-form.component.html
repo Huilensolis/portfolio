@@ -1,13 +1,24 @@
 <main id="contact">
     <h1 class="section-title">Contact</h1>
     <section class="form-container">
-        <form action="">
+        <form (submit)="sendEmail($event)">
             <section class="info">
+
+                <section class="username-container">
+                    <label for="username">name</label>
+                    <input
+                        type="text"
+                        name="user_name"
+                        id="username"
+                        autocomplete="name"
+                    />
+                </section>
+
                 <section class="email-container">
                     <label for="email">email</label>
                     <input
                         type="email"
-                        name=""
+                        name="user_email"
                         id="email"
                         autocomplete="email"
                     />
@@ -16,7 +27,7 @@
 
             <section class="message-container">
                 <label for="message">message</label>
-                <textarea name="" id="message" minlength="20"></textarea>
+                <textarea name="message" id="message" minlength="20"></textarea>
             </section>
 
             <button type="submit">send</button>

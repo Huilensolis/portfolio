@@ -30,8 +30,10 @@ main{
             .info{
                 width: 100%;
                 display: flex;
+                justify-content: flex-start;
+                align-items: center;
                 gap: 20px;
-                .email-container{
+                .email-container, .username-container{
                     width: 100%;
                     display: flex;
                     flex-direction: column;
