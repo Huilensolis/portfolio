@@ -1,17 +1,39 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailJsService } from 'src/app/services/email-js.service';
-import { NgForm, NgModel } from '@angular/forms';
+import { FormControl, FormGroup, Validator , Validators } from '@angular/forms';
 @Component({
     selector: 'app-contact-form',
     templateUrl: './contact-form.component.html',
     styleUrls: ['./contact-form.component.scss'],
 })
 export class ContactFormComponent {
-    constructor(private emailJsService: EmailJsService) {}
+    contactForm: FormGroup;
+    constructor(private emailJsService: EmailJsService) {
+        this.contactForm = new FormGroup({
+            name: new FormControl('', [Validators.required]),
+            email: new FormControl('', [Validators.email, Validators.required]),
+            message: new FormControl('', [Validators.required, Validators.minLength(20)]),
+        });
+    }
 
-    formName: string = '';
-    formEmail: string = '';
-    formMessage: string = '';
+    displayAlert: boolean = false;
+    displayAlertEvent() {
+        if (this.displayAlert === true) {
+            this.displayAlert = false;
+            setTimeout(() => {
+                this.displayAlert = true
+            }, 1000);
+            setTimeout(() => {
+                this.displayAlert = false
+            }, 3000);
+        } else {
+            this.displayAlert = true;
+            setTimeout(() => {
+                this.displayAlert = false
+            }, 3000);
+        }
+    }
+
     emailSendingSuccess: boolean = true;
 
     loading: boolean = false;
@@ -20,15 +42,13 @@ export class ContactFormComponent {
         e.preventDefault();
 
         this.loading = true;
-        this.emailJsService
-            .sendEmail(e)
+
+        this.emailJsService.sendEmail(e)
             .then(() => {
                 this.emailSendingSuccess = true;
                 this.displayAlertEvent();
 
-                this.formName = '';
-                this.formEmail = '';
-                this.formMessage = '';
+                this.contactForm.reset()
             })
             .catch(() => {
                 this.emailSendingSuccess = false;
@@ -39,15 +59,4 @@ export class ContactFormComponent {
             });
     }
 
-    displayAlert: boolean = false;
-    displayAlertEvent() {
-        if (this.displayAlert === true) {
-            this.displayAlert = false;
-            setTimeout(() => {
-                this.displayAlert = true;
-            }, 1000);
-        } else {
-            this.displayAlert = true;
-        }
-    }
 }

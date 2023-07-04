@@ -1,7 +1,7 @@
 <main id="contact">
     <h1 class="section-title">Contact</h1>
     <section class="form-container">
-        <form (submit)="sendEmail($event)" #contactForm="ngForm">
+        <form [formGroup]="contactForm" (submit)="sendEmail($event)" >
             <section class="info">
                 <section class="username-container">
                     <label for="username">name*</label>
@@ -10,12 +10,10 @@
                         name="user_name"
                         id="username"
                         autocomplete="name"
-                        [(ngModel)]="formName"
-                        #nameInput="ngModel"
+                        formControlName="name"
                         required
-                        #name="ngModel"
                     />
-                    <p class="error-p" *ngIf="!name.valid && name.touched">
+                    <p class="error-p" *ngIf="!contactForm.get('name')?.valid &&  contactForm.get('name')?.touched">
                         required area*
                     </p>
                 </section>
@@ -27,12 +25,13 @@
                         name="user_email"
                         id="email"
                         autocomplete="email"
-                        [(ngModel)]="formEmail"
-                        required
-                        #email="ngModel"
+                        formControlName="email"
                     />
-                    <p class="error-p" *ngIf="!email.valid && email.touched">
+                    <p class="error-p" *ngIf="!contactForm.get('email')?.valid && contactForm.get('email')?.touched && !contactForm.get('email')?.dirty">
                         required area*
+                    </p>
+                    <p class="error-p" *ngIf="!contactForm.get('email')?.valid && contactForm.get('email')?.touched && contactForm.get('email')?.dirty">
+                        email format required
                     </p>
                 </section>
             </section>
@@ -42,12 +41,13 @@
                 <textarea
                     name="message"
                     id="message"
-                    minlength="20"
                     required
-                    [(ngModel)]="formMessage"
-                    #textarea="ngModel"
+                    formControlName="message"
                 ></textarea>
-                <p class="error-p" *ngIf="!textarea.valid && textarea.touched">
+                <p class="error-p" *ngIf="!contactForm.get('message')?.valid && contactForm.get('message')?.touched && !contactForm.get('message')?.dirty">
+                    area required*
+                </p>
+                <p class="error-p" *ngIf="!contactForm.get('message')?.valid && contactForm.get('message')?.dirty">
                     minimum length is 20 characters.
                 </p>
             </section>
