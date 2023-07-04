@@ -8,6 +8,7 @@ import { AboutComponent } from './components/about/about.component';
 import { SkillSetComponent } from './components/skill-set/skill-set.component';
 import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
 import { ProjectTemplateComponent } from './components/project-template/project-template.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ProjectTemplateComponent } from './components/project-template/project-
     SkillSetComponent,
     ProjectsSectionComponent,
     ProjectTemplateComponent,
+    ContactFormComponent,
   ],
   imports: [
     BrowserModule
