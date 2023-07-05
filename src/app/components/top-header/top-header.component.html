@@ -1,8 +1,12 @@
 <header>
-    <nav id="header-nav">
+    <figure class="menu-icon-container" (click)="toggleMenuState()" [class.close]="menuActive === true">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+    </figure>
+    <nav id="header-nav" [class.active]="menuActive === true">
         <ul>
            <li *ngFor="let item of navItems">
-                <a href="{{'#' + item.title}}" (click)="SetNavItemsState(item.title)" [class.active]="item.title === actualSectionInNav" >
+                <a href="{{'#' + item.title}}" (click)="!menuActive ? SetNavItemsState(item.title) : toggleMenuState()" [class.active]="item.title === actualSectionInNav" >
                     {{item.title}}
                 </a>
            </li>

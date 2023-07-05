@@ -57,13 +57,11 @@ nav {
         }
         li {
             position: relative;
-            z-index: 5;
             border-radius: 24px;
             display: flex;
             height: 100%;
             width: 100%;
             a {
-                z-index: 2;
                 display: flex;
                 justify-content: flex-end;
                 align-items: flex-start;
@@ -75,12 +73,10 @@ nav {
                 border-radius: 24px;
                 background-color: $black;
                 span {
-                    z-index: 2;
                     font-size: clamp(40px, 2vw, 3rem);
                     color: $white;
                 }
                 svg {
-                    z-index: 2;
                     color: $white;
                     display: flex;
                     justify-content: center;

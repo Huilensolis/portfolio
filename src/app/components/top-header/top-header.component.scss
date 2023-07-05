@@ -7,13 +7,16 @@ header {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 80px;
     background-color: $black;
+    .menu-icon-container{
+        display: none;
+    }
     #header-nav {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
+        width: 80px;
         ul {
             display: flex;
             justify-content: center;
@@ -44,6 +47,80 @@ header {
                     font-weight: 500;
                     &.active{
                         color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (width < 1150px){
+    header{
+        background-color: $black;
+        .menu-icon-container{
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            height: 60px;
+            width: 60px;
+            padding: 10px;
+            gap: 10px;
+            .menu-line{
+                height: 2px;
+                border-radius: 2px;
+                width: 100%;
+                background-color: $white;
+            }
+            &.close{
+                :nth-child(1){
+                    transition: 0.5s;
+                    position: absolute;
+                    top: 40px;
+                    right: 10px;
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                }
+                :nth-child(2){
+                    transition: 0.5s;
+                    position: absolute;
+                    top: 40px;
+                    right: 10px;
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+            }
+        }
+        #header-nav{
+            display: none;
+            &.active{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background-color: $black;
+            }
+            ul{
+                transform: rotate(0deg);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                li{
+                    a{
+                        font-size: 4rem;
                     }
                 }
             }
