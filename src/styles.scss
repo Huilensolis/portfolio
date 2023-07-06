@@ -49,6 +49,9 @@ h3{
 p, span{
     font-size: clamp(1.5rem, 3vw, 3rem);
 }
+a{
+    font-size: clamp(1.8rem, 3vw, 3rem);
+}
 app-root {
     background-color: $black;
     color: $white;
