@@ -10,6 +10,7 @@ main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
+        gap: 20px;
         form {
             display: flex;
             flex-direction: column;
@@ -135,5 +136,28 @@ main {
     }
     to {
         transform: rotate(359deg);
+    }
+}
+@media (width < 1300px){
+    main{
+        .form-container{
+            grid-template-columns: 1fr;
+            .message-container {
+                textarea {
+                    resize: none;
+                    min-height: 40vh;
+                    border-radius: 10px;
+                    border: 2px solid $gray;
+                    background-color: $black;
+                    padding: 10px;
+                    font-weight: 500;
+                    font-size: 1.7rem;
+                    color: $white;
+                }
+            }
+            .mail-icon-container{
+                display: none;
+            }
+        }
     }
 }
