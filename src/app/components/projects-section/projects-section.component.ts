@@ -1,51 +1,91 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-projects-section',
-  templateUrl: './projects-section.component.html',
-  styleUrls: ['./projects-section.component.scss']
+    selector: 'app-projects-section',
+    templateUrl: './projects-section.component.html',
+    styleUrls: ['./projects-section.component.scss'],
 })
 export class ProjectsSectionComponent {
-    projectList = [
+    projectList: {
+        title: string;
+        description: string;
+        githubLink: string;
+        deployLink?: string;
+        technologies: string[];
+    }[] = [
         {
             title: 'Library API REST',
-            description: 'This is a project description',
+            description: 'CRUD api to mangage libraries and their books',
             githubLink: 'https://github.com/Huilensolis/library_API_REST',
-            technologies: ['node JS', 'express', 'sequelize', 'passport', 'JWT']
+            technologies: [
+                'node JS',
+                'express',
+                'sequelize',
+                'passport',
+                'JWT',
+            ],
         },
         {
-            title: 'cooming soon',
+            title: 'coming soon',
             description: 'This is a project description',
             githubLink: '',
-            technologies: ['angular', 'node JS', 'boostrap', 'express', 'sequelize', 'passport', 'JWT']
+            technologies: [
+                'angular',
+                'node JS',
+                'boostrap',
+                'express',
+                'sequelize',
+                'passport',
+                'JWT',
+            ],
         },
         {
-            title: 'cooming soon',
+            title: 'coming soon',
             description: 'This is a project description',
             githubLink: '',
-            deployLink: 'a',
-            technologies: ['node JS', 'express', 'sequelize', 'passport', 'JWT']
+            technologies: [
+                'node JS',
+                'express',
+                'sequelize',
+                'passport',
+                'JWT',
+            ],
         },
         {
-            title: 'cooming soon',
+            title: 'coming soon',
             description: 'This is a project description',
             githubLink: '',
-            deployLink: 'a',
-            technologies: ['node JS', 'express', 'sequelize', 'passport', 'JWT']
+            technologies: [
+                'node JS',
+                'express',
+                'sequelize',
+                'passport',
+                'JWT',
+            ],
         },
         {
-            title: 'cooming soon',
-            description: 'This is a project description',
+            title: 'coming soon',
             githubLink: '',
-            deployLink: 'a',
-            technologies: ['node JS', 'express', 'sequelize', 'passport', 'JWT']
+            description: 'This is a project description',
+            technologies: [
+                'node JS',
+                'express',
+                'sequelize',
+                'passport',
+                'JWT',
+            ],
         },
         {
-            title: 'cooming soon',
-            description: 'This is a project description',
+            title: 'coming soon',
             githubLink: '',
-            deployLink: 'a',
-            technologies: ['node JS', 'express', 'sequelize', 'passport', 'JWT']
-        }
-    ]
+            description: 'This is a project description',
+            technologies: [
+                'node JS',
+                'express',
+                'sequelize',
+                'passport',
+                'JWT',
+            ],
+        },
+    ];
 }

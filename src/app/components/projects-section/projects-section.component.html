@@ -5,7 +5,9 @@
 
         <ul>
             <li *ngFor="let project of projectList">
-                <app-project-template [project]="project" />
+                <a href="{{project.deployLink ? project.deployLink : (project.githubLink ? project.githubLink : '')}}" target="_blank">
+                    <app-project-template [project]="project" />
+                </a>
             </li>
         </ul>
 
