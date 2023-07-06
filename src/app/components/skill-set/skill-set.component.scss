@@ -14,7 +14,6 @@ ul {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
     li {
-        padding: 50px;
         transition: 0.5s;
         width: 100%;
         border-radius: 22px;
@@ -63,17 +62,14 @@ ul li {
     border: none;
     &:hover {
         animation-play-state: paused;
-        p{
+        p {
             transition: 0.5s;
             background-color: $gray;
-            // border-radius: 20px;
-            // height: 100%;
-            // width: 100%;
         }
     }
     p {
         border-radius: 22px;
-        padding: 50px;
+        padding: clamp(20px, 2vw, 50px);
         height: calc(100% - 4px);
         width: calc(100% - 4px);
         background-color: $black;
@@ -95,14 +91,22 @@ ul li {
     animation-duration: 15s;
     background-size: cover;
     animation: moveGradient infinite 40s;
-    &.important{
+    &.important {
         background-color: $gray;
-        background-image: radial-gradient(circle farthest-corner at center center, #AB82F3 1%, $gray 56%);
+        background-image: radial-gradient(
+            circle farthest-corner at center center,
+            #ab82f3 1%,
+            $gray 56%
+        );
         animation: moveGradient infinite 10s;
     }
-    &.backend{
+    &.backend {
         background-color: $gray;
-        background-image: radial-gradient(circle farthest-corner at center center, #86F64F 0%, $gray 56%);
+        background-image: radial-gradient(
+            circle farthest-corner at center center,
+            #86f64f 0%,
+            $gray 56%
+        );
         animation: moveGradient infinite 20s;
     }
 }
@@ -125,4 +129,66 @@ ul li {
     }
 }
 
-
+// responsive
+@media (width < 1150px) {
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 20px;
+        li {
+            transition: 0.5s;
+            width: 100%;
+            border-radius: 22px;
+            border: 2px solid #333;
+            &:hover {
+                background-color: #333;
+            }
+            p {
+                color: $white;
+                font-weight: 600;
+                font-size: 2.8rem;
+            }
+        }
+        :nth-child(1) {
+            grid-column: auto;
+            grid-row: auto;
+        }
+        :nth-child(2) {
+            grid-column: auto;
+            grid-row: auto;
+        }
+        :nth-child(3) {
+            grid-column: auto;
+            grid-row: auto;
+        }
+        :nth-child(4) {
+            grid-column: auto;
+            grid-row: auto;
+        }
+        :nth-child(7) {
+            grid-column: auto;
+            grid-row: auto;
+        }
+        :nth-child(8) {
+            grid-column: auto;
+            grid-row: auto;
+        }
+        :nth-child(9) {
+            grid-column: auto;
+            grid-row: auto;
+        }
+        :nth-child(10) {
+            grid-column: auto;
+            grid-row: auto;
+        }
+        :nth-child(11) {
+            grid-column:auto;
+            grid-row: auto;
+        }
+        :nth-child(12) {
+            grid-column: auto;
+            grid-row: auto;
+        }
+    }
+}
