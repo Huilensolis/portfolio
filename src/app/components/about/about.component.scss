@@ -6,19 +6,29 @@ section {
     flex-direction: column;
     gap: 10px;
     width: 100%;
+    padding-right: 10vw;
     h1 {
         color: $white;
     }
     p {
         color: $clear-black;
         border-radius: 24px;
-        line-height: 35px;
+        line-height: 45px;
         font-stretch: 50px;
         span {
-            font-weight: 600;
+            font-weight: 400;
             font-size: 2rem;
+            color: $clear-black;
         }
         font-size: 2rem;
-        font-weight: 500;
+        font-weight: 400;
+        &:hover{
+            transition: 1s;
+            // color: $gray;
+            span{
+                transition: 1s;
+                color: $white;
+            }
+        }
     }
 }
