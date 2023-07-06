@@ -1,8 +1,11 @@
 <header class="nav-top-container">
-    <figure class="menu-icon-container" (click)="toggleMenuState()" [class.close]="menuActive === true">
-        <div class="menu-line"></div>
-        <div class="menu-line"></div>
-    </figure>
+    <nav class="mobile-menu">
+        <a href="#home">h</a>
+        <figure class="menu-icon-container" (click)="toggleMenuState()" [class.close]="menuActive === true">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </figure>
+    </nav>
     <nav id="header-nav" [class.active]="menuActive === true">
         <ul>
            <li *ngFor="let item of navItems">
