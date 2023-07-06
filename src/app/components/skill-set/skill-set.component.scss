@@ -133,7 +133,7 @@ ul li {
 @media (width < 1300px) {
     ul {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
         gap: 20px;
         li {
