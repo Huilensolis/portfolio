@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NavItem } from '../../interfaces/nav.models';
 import { NavService } from 'src/app/services/nav.service';
 import { Subscription } from 'rxjs';
+import { MenuStateService } from 'src/app/services/menu-state.service';
 
 @Component({
     selector: 'app-top-header',
@@ -13,12 +14,17 @@ export class TopHeaderComponent {
     actualSectionInNav: string = '';
 
     private navItemsSubsctiption!: Subscription;
-    constructor(private navService: NavService) {}
+    constructor(
+        private navService: NavService,
+        private menuStateService: MenuStateService,
+    ) {}
 
     // toggle menu
-    menuActive: boolean = false;
-    toggleMenuState(){
-        this.menuActive = !this.menuActive;
+    menuStateSubscription!: Subscription;
+    menuActive!: boolean;
+
+    toggleMenuState() {
+        this.menuStateService.toggleMenuState();
     }
 
     ngOnInit(): void {
@@ -29,9 +35,12 @@ export class TopHeaderComponent {
             .subscribe(() => {
                 this.updateItems();
             });
-
+        this.menuStateSubscription = this.menuStateService
+            .getSubscription()
+            .subscribe(() => {
+                this.updateMenuState();
+            });
     }
-
 
     private updateItems() {
         this.navItems = this.navService.getNavItems();
@@ -45,7 +54,12 @@ export class TopHeaderComponent {
         this.navService.setActive(title);
     }
 
+    private updateMenuState() {
+        this.menuActive = this.menuStateService.getMenuState();
+    }
+
     ngOnDestroy(): void {
         this.navItemsSubsctiption.unsubscribe();
+        this.menuStateSubscription.unsubscribe();
     }
 }

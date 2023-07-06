@@ -1,6 +1,6 @@
 @import "../../scss-variables/colors.scss";
 @import "../../scss-variables/page-pading";
-header {
+.nav-top-container {
     position: fixed;
     right: 0;
     top: 0;
@@ -54,7 +54,7 @@ header {
     }
 }
 @media (width < 1150px){
-    header{
+    .nav-top-container{
         background-color: $black;
         .menu-icon-container{
             z-index: 3;
