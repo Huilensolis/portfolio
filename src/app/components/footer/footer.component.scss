@@ -16,6 +16,9 @@ footer {
         a{
             display: flex;
             flex-wrap: wrap;
+            p{
+                font-size: 1.5rem;
+            }
         }
         &:hover{
             a{
