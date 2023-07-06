@@ -89,8 +89,15 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/favicon_io/favicon.ico",
+              "src/assets",
+              "src/favicon_io",
+              "src/favicon_io/android-chrome-192x192.png",
+              "src/favicon_io/android-chrome-512x512.png",
+              "src/favicon_io/apple-touch-icon.png",
+              "src/favicon_io/favicon-16x16.png",
+              "src/favicon_io/favicon-32x32.png",
+              "src/favicon_io/site.webmanifest"
             ],
             "styles": [
               "src/styles.scss"
