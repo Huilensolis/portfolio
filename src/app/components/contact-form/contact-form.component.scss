@@ -65,14 +65,14 @@ main {
                     transition: 0.5s;
                     background-color: $blue;
                 }
-                // &:disabled {
-                //     transition: 0.5s;
-                //     background-color: $gray;
-                //     cursor: not-allowed;
-                // }
-                &:hover{
+                &:disabled {
                     transition: 0.5s;
-                    background-color: $clear-purple;
+                    background-color: $clear-black;
+                    cursor: not-allowed;
+                }
+                &:hover{
+                    transition: 0.7s;
+                    background-color: $clear-black;
                     &:disabled{
                         background-color: $disabled-button;
                     }
