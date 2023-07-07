@@ -72,9 +72,10 @@ main {
                 }
                 &:hover{
                     transition: 0.7s;
-                    background-color: $clear-black;
+                    background-color: rgb(182, 182, 182);
                     &:disabled{
                         background-color: $disabled-button;
+                        border-color: transparent;
                     }
                     &.loading{
                         background-color: $clear-blue;
