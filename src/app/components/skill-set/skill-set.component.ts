@@ -16,49 +16,15 @@ export class SkillSetComponent {
             important: true,
         },
         {
-            name: 'javascript',
-        },
-        {
             name: 'typescript',
             important: true,
         },
         {
-            name: 'HTML5',
+            name: 'HTML & scss',
         },
         {
-            name: 'CSS3',
-        },
-        {
-            name: 'node',
+            name: 'node  & express',
             backend: true,
-        },
-        {
-            name: 'express',
-            backend: true,
-        },
-        {
-            name: 'sequelize',
-            backend: true,
-        },
-        {
-            name: 'passport-JWT',
-            backend: true,
-        },
-        {
-            name: 'Git',
-            tool: true
-        },
-        {
-            name: 'Github',
-            tool: true
-        },
-        {
-            name: 'Linux',
-            tool: true
-        },
-        {
-            name: 'Npm',
-            tool: true
-        },
+        }
     ]
 }

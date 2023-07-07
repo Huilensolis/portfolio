@@ -5,7 +5,7 @@
 
         <section class="language-list">
             <ul>
-                <li *ngFor="let language of LanguagesList" [class.backend]="language.backend" [class.important]="language.important" [class.tool]="language.tool">
+                <li *ngFor="let language of LanguagesList" [class.backend]="language.backend" [class.important]="language.important">
                     <p tabindex="0">{{language.name}}</p>
                 </li>
             </ul>

@@ -23,11 +23,6 @@ export class NavService {
             isActive: false
         },
         {
-            title: 'skillset',
-            url: '/',
-            isActive: false
-        },
-        {
             title: 'projects',
             url: '/',
             isActive: false
@@ -47,7 +42,7 @@ export class NavService {
         return this.navItems;
     }
 
-    setActive(title: 'home' | 'about' | 'skillset' | 'projects' | 'contact'): void{
+    setActive(title: 'home' | 'about' | 'projects' | 'contact'): void{
 
         this.navItems.forEach(nav => {
             nav.isActive = false;
