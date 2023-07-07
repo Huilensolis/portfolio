@@ -65,11 +65,11 @@ main {
                     transition: 0.5s;
                     background-color: $blue;
                 }
-                &:disabled {
-                    transition: 0.5s;
-                    background-color: $gray;
-                    cursor: not-allowed;
-                }
+                // &:disabled {
+                //     transition: 0.5s;
+                //     background-color: $gray;
+                //     cursor: not-allowed;
+                // }
                 &:hover{
                     transition: 0.5s;
                     background-color: $clear-purple;
@@ -84,11 +84,10 @@ main {
                 justify-content: center;
                 align-items: center;
                 border-radius: 8px;
-                background-color: $purple;
+                background-color: $white;
                 width: 100%;
                 color: $black;
                 font-weight: 500;
-                font-size: 2rem;
                 padding: 5px;
                 gap: 10px;
                 svg {
@@ -98,9 +97,10 @@ main {
                         animation: rotation 2s infinite linear;
                     }
                     height: 100%;
-                    color: $white;
+                    color: $black;
                 }
                 p {
+                    font-size: 2rem;
                     display: none;
                     &.send{
                         display: inline-block;
