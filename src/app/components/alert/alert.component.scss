@@ -4,6 +4,7 @@
     background-color: $black;
     height: max-content;
     width: max-content;
+    max-width: 90vw;
 
     border-radius: 12px;
 
@@ -61,19 +62,19 @@
     .text-container{
         h1{
             color: $white;
-            font-size: 2rem;
+            font-size: clamp(25px, 5vw, 2rem);
             font-weight: 600;
         }
         p{
-            color: $blue;
-            font-size: 1.5rem;
+            color: $yellow-green;
+            font-size: clamp(15px, 5vw, 2rem);
             font-weight: 500;
         }
     }
 }
 .display{
     transition: 1s;
-    transform: translateY(10px);
+    transform: translateY(calc(60px + 10px)); //nav bar height plus 10px
     visibility: visible;
     opacity: 100%;
 }
