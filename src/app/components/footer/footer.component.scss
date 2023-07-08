@@ -13,16 +13,17 @@ footer {
         flex-direction: column;
         justify-content: flex-start;
         gap: 10px;
+        transition: 0.5s ease-in-out;
         a{
             display: flex;
             flex-wrap: wrap;
+            transition: 0.5s ease-in-out;
             p{
                 font-size: 1.5rem;
             }
         }
         &:hover{
             a{
-                transition: 0.5s;
                 color: $purple;
             }
         }
@@ -50,6 +51,7 @@ footer {
                     height: 100%;
                     width: 100%;
                     color: $white;
+                    transition: 0.5s ease-in-out;
                     svg{
                         height: 1.5rem;
                     }

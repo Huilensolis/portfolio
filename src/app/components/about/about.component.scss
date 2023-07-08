@@ -17,25 +17,24 @@ section {
             font-weight: 400;
             font-size: 2rem;
             color: $clear-black;
+            transition: 0.5s ease-in-out;
         }
-        font-size: 2rem;
-        font-weight: 400;
-        &:hover{
-            transition: 1s;
-            span{
-                transition: 1s;
+        &:hover {
+            span {
                 color: $white;
             }
         }
+        font-size: 2rem;
+        font-weight: 400;
     }
     a {
         margin-top: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-        &:hover{
-            transition: 0.7s;
-            background-color: #CCCCCC;
+        transition: 0.5s ease-in-out;
+        &:hover {
+            background-color: #cccccc;
             cursor: pointer;
         }
         border-radius: 10px;
@@ -46,16 +45,15 @@ section {
         padding: 15px 30px;
         color: $black;
         background-color: $white;
-        svg{
+        svg {
             fill: $black;
         }
     }
 }
 
 // responsive
-@media (width < 1150px){
-    @import "../../scss-variables/colors";
-section {
-    padding-right: 0px;
-}
+@media (width < 1150px) {
+    section {
+        padding-right: 0px;
+    }
 }

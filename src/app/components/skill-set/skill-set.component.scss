@@ -18,6 +18,7 @@ ul {
         width: 100%;
         border-radius: 22px;
         border: 2px solid #333;
+        transition: 0.5s ease-in-out;
         &:hover {
             background-color: #333;
         }
@@ -35,19 +36,19 @@ ul {
 
 ul li {
     border: none;
-    &:hover {
-        animation-play-state: paused;
-        p {
-            transition: 0.5s;
-            background-color: $gray;
-        }
-    }
     p {
+        transition: 0.5s ease-in-out;
         border-radius: 22px;
         padding: clamp(20px, 2vw, 50px);
         height: calc(100% - 4px);
         width: calc(100% - 4px);
         background-color: $black;
+    }
+    &:hover {
+        animation-play-state: paused;
+        p {
+            background-color: $gray;
+        }
     }
     padding: 0;
     background-color: transparent;
@@ -112,10 +113,11 @@ ul li {
         grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
         gap: 20px;
         li {
-            transition: 0.5s;
+            transition: 0.5s ease-in-out;
             width: 100%;
             border-radius: 22px;
             border: 2px solid #333;
+            transition: 0.5s ease-in-out;
             &:hover {
                 background-color: #333;
             }
