@@ -1,7 +1,7 @@
-@import '../../scss-variables/colors';
+@import "../../scss-variables/colors";
 @import "../../scss-variables/transition-duration";
 
-.alert{
+.alert {
     background-color: $black;
     height: max-content;
     width: max-content;
@@ -11,17 +11,17 @@
 
     border: 4px solid;
     border-color: $blue;
-    &.success{
+    &.success {
         border-color: $yellow-green;
         outline: 3px solid $black;
     }
-    &.error{
+    &.error {
         border-color: red;
-        .text-container{
-            h1{
+        .text-container {
+            h1 {
                 color: red;
             }
-            p{
+            p {
                 color: $white;
             }
         }
@@ -43,39 +43,47 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    .icon{
+    .icon {
         height: 50px;
-        svg{
+        svg {
             height: 100%;
             width: 100%;
         }
-        &.error{
-            svg{
+        &.error {
+            svg {
                 color: red;
             }
         }
-        &.check{
-            svg{
+        &.check {
+            svg {
                 color: $yellow-green;
             }
         }
     }
-    .text-container{
-        h1{
+    .text-container {
+        h1 {
             color: $white;
             font-size: clamp(25px, 5vw, 2rem);
             font-weight: 600;
         }
-        p{
+        p {
             color: $yellow-green;
             font-size: clamp(15px, 5vw, 2rem);
             font-weight: 500;
         }
     }
 }
-.display{
+.display {
     transition: $default-duration ease-in-out;
-    transform: translateY(calc(60px + 10px)); //nav bar height plus 10px
+    transform: translateY(10px); //nav bar height plus 10px
     visibility: visible;
     opacity: 100%;
+}
+@media (width < 1300px) {
+    .display {
+        transition: $default-duration ease-in-out;
+        transform: translateY(calc(60px + 10px)); //nav bar height plus 10px
+        visibility: visible;
+        opacity: 100%;
+    }
 }
