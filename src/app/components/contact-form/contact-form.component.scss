@@ -134,7 +134,9 @@ main {
                 justify-content: flex-start;
                 height: 100%;
                 width: 100%;
-                background-color: $white;
+                background-color: $black;
+                border: 2px $gray;
+                border-style: dashed;
                 border-radius: 12px;
                 .interface{
                     width: 100%;
@@ -143,36 +145,36 @@ main {
                         border-top-right-radius: 12px;
                         padding: 20px 20px 0 20px;
                         width: 100%;
-                        background-color: $white;
+                        background-color: $black;
                         h1{
                             font-size: 2rem;
-                            color: $black;
+                            color: $white;
                         }
                     }
                     .from{
                         padding: 10px 20px;
-                        border-bottom: 1px solid gray;
+                        border-bottom: 1px dashed $gray;
                         h2{
                             font-size: 1rem;
-                            color: $clear-black;
+                            color: gray;
                             #name{
                                 font-size: 1rem;
-                                color: $black;
+                                color: $white;
                             }
                             #email{
                                 font-size: 1rem;
-                                color: $clear-black;
+                                color: gray;
                             }
                         }
                     }
                     .to{
                         padding: 10px 20px;
-                        border-bottom: 1px solid gray;
+                        // border-bottom: 1px dashed $gray;
                         h1{
                             font-size: 1rem;
-                            color: $clear-black;
+                            color: gray;
                             span{
-                                color: $black;
+                                color: $white;
                                 font-size: 1rem;
                             }
                         }
@@ -182,8 +184,9 @@ main {
                     padding: 10px 20px;
                     min-height: 60vh;
                     p{
-                        color: $black;
-                        font-size: 1rem;
+                        color: $white;
+                        font-size: 1.1rem;
+                        font-weight: 500;
                     }
                 }
             }
