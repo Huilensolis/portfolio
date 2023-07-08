@@ -4,7 +4,7 @@ section {
     margin-bottom: 100px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     width: 100%;
     padding-right: 5vw;
     h1 {
@@ -23,11 +23,32 @@ section {
         font-weight: 400;
         &:hover{
             transition: 1s;
-            // color: $gray;
             span{
                 transition: 1s;
                 color: $white;
             }
+        }
+    }
+    a {
+        // margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            transition: 0.7s;
+            background-color: #CCCCCC;
+            cursor: pointer;
+        }
+        border-radius: 10px;
+        background-color: $white;
+        width: max-content;
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 15px 30px;
+        color: $black;
+        background-color: $white;
+        svg{
+            fill: $black;
         }
     }
 }
