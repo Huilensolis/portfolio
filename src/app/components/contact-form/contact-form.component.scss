@@ -1,18 +1,20 @@
 @import "../../scss-variables/colors";
 @import "../../scss-variables/transition-duration";
 
+$max-height: calc(70vh - 2rem);
+
 main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
-    height: 100vh;
     .form-container {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: calc(100vh - 2rem);
+        grid-template-rows: 100%;
+        max-height:$max-height;
+        height: $max-height;
         gap: 20px;
-        height: 100%;
         form {
             display: flex;
             flex-direction: column;
@@ -31,9 +33,10 @@ main {
                 color: $white;
                 font-size: 1.6rem;
                 transition: $menu-item-duration ease-in-out;
-                &:hover{
+                &:hover {
                     filter: brightness(200%);
-                    &:focus, &:focus-visible{
+                    &:focus,
+                    &:focus-visible {
                         filter: brightness(100%);
                     }
                 }
@@ -55,7 +58,7 @@ main {
             .message-container {
                 display: flex;
                 flex-direction: column;
-                // height: ;
+                height: 100%;
                 gap: 5px;
                 textarea {
                     resize: none;
@@ -70,9 +73,10 @@ main {
                     color: $white;
                     overflow-y: auto;
                     transition: $menu-item-duration ease-in-out;
-                    &:hover{
+                    &:hover {
                         filter: brightness(200%);
-                        &:focus, &:focus-visible{
+                        &:focus,
+                        &:focus-visible {
                             filter: brightness(100%);
                             border-color: $gray;
                         }
@@ -80,19 +84,19 @@ main {
                 }
             }
             button {
-                &.loading{
+                &.loading {
                     background-color: $blue;
                 }
                 &:disabled {
                     background-color: $clear-black;
                 }
-                &:hover{
+                &:hover {
                     filter: brightness(80%);
-                    &:disabled{
+                    &:disabled {
                         background-color: $disabled-button;
                         cursor: not-allowed;
                     }
-                    &.loading{
+                    &.loading {
                         background-color: $clear-blue;
                     }
                 }
@@ -103,7 +107,7 @@ main {
                 align-items: center;
                 border-radius: 8px;
                 background-color: $white;
-                width: 50%;
+                width: 100%;
                 color: $black;
                 font-weight: 500;
                 padding: 10px;
@@ -112,7 +116,7 @@ main {
                     display: none;
                     &.active {
                         display: inline-block;
-                        .loading{
+                        .loading {
                             animation: rotation 2s infinite linear;
                         }
                     }
@@ -123,10 +127,10 @@ main {
                 p {
                     font-size: 2rem;
                     display: none;
-                    &.send{
+                    &.send {
                         display: inline-block;
                     }
-                    &.loading{
+                    &.loading {
                         color: $white;
                         font-style: italic;
                         font-weight: 200;
@@ -139,56 +143,58 @@ main {
             display: flex;
             justify-content: center;
             align-items: start;
-            height: calc(100% - 58px - 20px); // 100 - button size:58px - gap:20px
-            padding-top: calc(29px + 5px); // we rest the labels size on top - the gap
+            max-height: 100%;
+            padding-top: calc(
+                29px + 5px
+            );
             width: 100%;
-            // height: 100%;
             grid-column: 2 / 3;
-            .mail-figure-container{
+            .mail-figure-container {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: flex-start;
                 width: 100%;
+                height: 100%;
                 background-color: $black;
                 border: 2px $gray;
                 border-style: dashed;
                 border-radius: 12px;
-                .preview{
+                .preview {
                     width: 100%;
-                    .email-title-preview{
+                    .email-title-preview {
                         border-top-left-radius: 12px;
                         border-top-right-radius: 12px;
                         padding: 20px 20px 0 20px;
                         width: 100%;
                         background-color: $black;
-                        h1{
+                        h1 {
                             font-size: 2rem;
                             color: $white;
                         }
                     }
-                    .from{
+                    .from {
                         padding: 10px 20px;
                         border-bottom: 1px dashed $gray;
-                        h2{
+                        h2 {
                             font-size: 1rem;
                             color: gray;
-                            #name-preview{
+                            #name-preview {
                                 font-size: 1rem;
                                 color: $white;
                             }
-                            #email-preview{
+                            #email-preview {
                                 font-size: 1rem;
                                 color: gray;
                             }
                         }
                     }
-                    .to{
+                    .to {
                         padding: 10px 20px;
-                        h1{
+                        h1 {
                             font-size: 1rem;
                             color: gray;
-                            span{
+                            span {
                                 color: $white;
                                 font-size: 1rem;
                             }
@@ -197,18 +203,18 @@ main {
                 }
                 .message-preview {
                     padding: 10px 20px;
-                    // min-height: 60vh;
                     width: 100%;
+                    height: 100%;
+                    max-height: $max-height;
+                    overflow-y: auto;
                     p {
-                      max-height: calc(100% - 120px); // Establece una altura máxima
-                      overflow-y: auto;
                         word-wrap: break-word;
                         word-break: break-all;
                         color: $white;
                         width: 100%;
+                        max-height: calc(60vh - 2rem);
                         font-size: 1.1rem;
                         font-weight: 500;
-                        overflow-y: scroll;
                     }
                 }
             }
@@ -227,9 +233,9 @@ main {
         transform: rotate(359deg);
     }
 }
-@media (width < 1300px){
-    main{
-        .form-container{
+@media (width < 1300px) {
+    main {
+        .form-container {
             grid-template-columns: 1fr;
             .message-container {
                 textarea {
@@ -244,13 +250,13 @@ main {
                     color: $white;
                 }
             }
-            .mail-icon-container{
+            .mail-icon-container {
                 display: none;
             }
         }
     }
 }
-@media (width < 670px){
+@media (width < 670px) {
     main {
         .form-container {
             form {
