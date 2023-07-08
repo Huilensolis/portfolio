@@ -71,6 +71,7 @@ main {
                     &:hover{
                         filter: brightness(200%);
                         &:focus, &:focus-visible{
+                            filter: brightness(100%);
                             border-color: $gray;
                         }
                     }
