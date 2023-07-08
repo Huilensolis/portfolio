@@ -1,7 +1,7 @@
 @import "../../scss-variables/colors";
 @import "../../scss-variables/transition-duration";
 
-$max-height: calc(70vh - 2rem);
+$max-height: calc(80vh);
 
 main {
     display: flex;
@@ -32,6 +32,7 @@ main {
                 border: 2px solid $clear-black;
                 color: $white;
                 font-size: 1.6rem;
+                font-weight: 600;
                 transition: $menu-item-duration ease-in-out;
                 &:hover {
                     filter: brightness(200%);
@@ -68,7 +69,7 @@ main {
                     border: 2px solid $clear-black;
                     background-color: transparent;
                     padding: 10px;
-                    font-weight: 500;
+                    font-weight: 600;
                     font-size: 1.7rem;
                     color: $white;
                     overflow-y: auto;
@@ -85,6 +86,7 @@ main {
             }
             button {
                 &.loading {
+                    transition: $default-duration ease-in-out;
                     background-color: $blue;
                 }
                 &:disabled {
@@ -116,8 +118,9 @@ main {
                     display: none;
                     &.active {
                         display: inline-block;
-                        .loading {
-                            animation: rotation 2s infinite linear;
+                        &#loading {
+                            animation: rotation 1s ease-in-out infinite;
+                            color: $white;
                         }
                     }
                     height: 100%;
@@ -128,12 +131,6 @@ main {
                     font-size: 2rem;
                     display: none;
                     &.send {
-                        display: inline-block;
-                    }
-                    &.loading {
-                        color: $white;
-                        font-style: italic;
-                        font-weight: 200;
                         display: inline-block;
                     }
                 }
@@ -191,6 +188,7 @@ main {
                     }
                     .to {
                         padding: 10px 20px;
+                        border-bottom: 1px dashed $gray;
                         h1 {
                             font-size: 1rem;
                             color: gray;
