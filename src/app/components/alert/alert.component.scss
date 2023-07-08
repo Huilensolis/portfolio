@@ -1,4 +1,5 @@
 @import '../../scss-variables/colors';
+@import "../../scss-variables/transition-duration";
 
 .alert{
     background-color: $black;
@@ -73,7 +74,7 @@
     }
 }
 .display{
-    transition: 0.5s ease-in-out;
+    transition: $default-duration ease-in-out;
     transform: translateY(calc(60px + 10px)); //nav bar height plus 10px
     visibility: visible;
     opacity: 100%;

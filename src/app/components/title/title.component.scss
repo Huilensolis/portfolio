@@ -1,4 +1,5 @@
 @import "../../scss-variables/colors";
+@import "../../scss-variables/transition-duration";
 
 nav {
     height: 100vh;
@@ -69,7 +70,7 @@ nav {
                 border-radius: 12px;
                 padding: 10px;
                 border: 2px dashed $gray;
-                transition: 0.3s ease-in-out;
+                transition: $menu-item-duration ease-in-out;
                 border-style: dashed;
                 height: 3.4rem;
                 padding: 10px;

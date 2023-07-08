@@ -1,4 +1,5 @@
 @import "../../scss-variables/colors";
+@import "../../scss-variables/transition-duration";
 
 .project-item {
     display: flex;
@@ -12,7 +13,7 @@
     border-radius: 12px;
     padding: 10px;
     border: 2px dashed $gray;
-    transition: 0.5s ease-in-out;
+    transition: $default-duration ease-in-out;
     &:hover {
         filter: brightness(200%);
     }
@@ -24,7 +25,6 @@
             align-items: center;
             color: $white;
             width: 100%;
-            transition: 1.5s;
             height: 3rem;
             text-decoration: underline;
             font-size: 2rem;
@@ -33,7 +33,6 @@
                 height: 2rem;
                 width: 2rem;
                 font-size: 2rem;
-                transition: 1.5s;
             }
         }
     }
@@ -42,7 +41,6 @@
             width: 100%;
             text-align: start;
             color: $white;
-            transition: 1.5s;
         }
         header {
             width: 100%;
