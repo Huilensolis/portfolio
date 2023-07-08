@@ -28,6 +28,13 @@ main {
                 border: 2px solid $gray;
                 color: $white;
                 font-size: 1.6rem;
+                &:hover{
+                    transition: 0.5s;
+                    border-color: $white;
+                    &:focus, &:focus-visible{
+                        border-color: $gray;
+                    }
+                }
             }
             .info {
                 width: 100%;
@@ -59,6 +66,13 @@ main {
                     font-weight: 500;
                     font-size: 1.7rem;
                     color: $white;
+                    &:hover{
+                        transition: 0.5s;
+                        border-color: $white;
+                        &:focus, &:focus-visible{
+                            border-color: $gray;
+                        }
+                    }
                 }
             }
             button {
@@ -69,14 +83,15 @@ main {
                 &:disabled {
                     transition: 0.5s;
                     background-color: $clear-black;
-                    cursor: not-allowed;
                 }
                 &:hover{
                     transition: 0.7s;
                     background-color: rgb(182, 182, 182);
+                    cursor: pointer;
                     &:disabled{
                         background-color: $disabled-button;
                         border-color: transparent;
+                        cursor: not-allowed;
                     }
                     &.loading{
                         background-color: $clear-blue;
