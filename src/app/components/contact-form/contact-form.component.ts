@@ -1,12 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailJsService } from 'src/app/services/email-js.service';
-import { FormControl, FormGroup, Validator , Validators } from '@angular/forms';
+import { FormControl, FormGroup, NgModel , Validators } from '@angular/forms';
 @Component({
     selector: 'app-contact-form',
     templateUrl: './contact-form.component.html',
     styleUrls: ['./contact-form.component.scss'],
 })
 export class ContactFormComponent {
+    name: string = '';
+    email: string = '';
+    message: string = '';
+
     contactForm: FormGroup;
     constructor(private emailJsService: EmailJsService) {
         this.contactForm = new FormGroup({
@@ -49,6 +53,7 @@ export class ContactFormComponent {
                 this.displayAlertEvent();
 
                 this.contactForm.reset()
+                this.resetForm()
             })
             .catch(() => {
                 this.emailSendingSuccess = false;
@@ -57,6 +62,12 @@ export class ContactFormComponent {
             .finally(() => {
                 this.loading = false;
             });
+    }
+
+    resetForm(){
+        this.name = ''
+        this.email= ''
+        this.message= ''
     }
 
 }
