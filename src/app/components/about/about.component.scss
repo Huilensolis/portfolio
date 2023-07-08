@@ -4,7 +4,6 @@ section {
     margin-bottom: 100px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     width: 100%;
     padding-right: 5vw;
     h1 {
@@ -30,7 +29,7 @@ section {
         }
     }
     a {
-        // margin-top: 10px;
+        margin-top: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
