@@ -151,9 +151,9 @@ main {
                 border: 2px $gray;
                 border-style: dashed;
                 border-radius: 12px;
-                .interface{
+                .preview{
                     width: 100%;
-                    .title{
+                    .email-title-preview{
                         border-top-left-radius: 12px;
                         border-top-right-radius: 12px;
                         padding: 20px 20px 0 20px;
@@ -170,11 +170,11 @@ main {
                         h2{
                             font-size: 1rem;
                             color: gray;
-                            #name{
+                            #name-preview{
                                 font-size: 1rem;
                                 color: $white;
                             }
-                            #email{
+                            #email-preview{
                                 font-size: 1rem;
                                 color: gray;
                             }
@@ -182,7 +182,6 @@ main {
                     }
                     .to{
                         padding: 10px 20px;
-                        // border-bottom: 1px dashed $gray;
                         h1{
                             font-size: 1rem;
                             color: gray;
@@ -193,7 +192,7 @@ main {
                         }
                     }
                 }
-                .message{
+                .message-preview{
                     padding: 10px 20px;
                     min-height: 60vh;
                     p{
