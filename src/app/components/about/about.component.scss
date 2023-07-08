@@ -33,9 +33,9 @@ section {
         justify-content: center;
         align-items: center;
         transition: 0.5s ease-in-out;
+        cursor: pointer;
         &:hover {
-            background-color: #cccccc;
-            cursor: pointer;
+            filter: brightness(80%);
         }
         border-radius: 10px;
         background-color: $white;
