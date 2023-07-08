@@ -34,6 +34,24 @@ body {
         overflow: hidden;
     }
     background-color: $black;
+
+    /* Ancho del scroll */
+    ::-webkit-scrollbar {
+        width: 16px;
+    }
+    // / Fondo del scroll /
+    ::-webkit-scrollbar-track {
+        background: $gray;
+    }
+    // / Color de la barra del scroll /
+    ::-webkit-scrollbar-thumb {
+        background: $clear-black;
+        border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: $white;
+    }
 }
 body,
 textarea,
@@ -71,17 +89,3 @@ app-root {
     padding: 0 clamp(20px, 10vw, 100px);
     gap: 3rem;
 }
-// $yellow-green: #86F64F;
-// $clear-yellow-green: #C0F679;
-
-// $pink-orange: #F1B401;
-// $clear-pink-orange: #fad35c;
-
-// $blue: #1c89f6;
-// $clear-blue: #52a8ff;
-
-// $purple: #AB82F3;
-// $clear-purple: #c49efe;
-
-// $white: #E9E9E9;
-// $darker-white: #E9E9E9;

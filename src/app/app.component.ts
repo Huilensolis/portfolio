@@ -7,24 +7,26 @@ import { Subscription } from 'rxjs';
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-    constructor(private render: Renderer2, private menuStateService: MenuStateService){
-
-    }
+    constructor(
+        private render: Renderer2,
+        private menuStateService: MenuStateService
+    ) {}
     menuSubscription!: Subscription;
-    menuState: boolean = false
-    ngOnInit(){
-        this.menuSubscription = this.menuStateService.getSubscription()
-        .subscribe(() => {
-            this.toggleMenuState()
-        })
+    menuState: boolean = false;
+    ngOnInit() {
+        this.menuSubscription = this.menuStateService
+            .getSubscription()
+            .subscribe(() => {
+                this.toggleMenuState();
+            });
     }
-    toggleMenuState(){
-        this.menuState = this.menuStateService.getMenuState()
+    toggleMenuState() {
+        this.menuState = this.menuStateService.getMenuState();
 
-        if(this.menuState === true){
-            this.render.addClass(document.body, 'menu-open')
-        } else{
-            this.render.removeClass(document.body, 'menu-open')
+        if (this.menuState === true) {
+            this.render.addClass(document.body, 'menu-open');
+        } else {
+            this.render.removeClass(document.body, 'menu-open');
         }
     }
 }
