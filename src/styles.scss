@@ -57,12 +57,12 @@ a {
     font-size: clamp(1.8rem, 3vw, 3rem);
 }
 app-root {
-    background: radial-gradient(
+    background-image: radial-gradient(
         ellipse 33% 100% at 2% 58%,
-        rgb(28 44 169 / 25%),
+        rgba(117, 28, 169, 0.25),
         rgba(19, 136, 165, 0)
     );
-    animation: background-rgb 40s infinite;
+    animation: background-rgb 40s ease-in-out infinite;
     color: $white;
     display: flex;
     flex-direction: column;
@@ -71,54 +71,6 @@ app-root {
     padding: 0 clamp(20px, 10vw, 100px);
     gap: 3rem;
 }
-@keyframes background-rgb {
-    0% {
-        background: radial-gradient(
-            ellipse 33% 100% at 2% 58%,
-            rgb(28 44 169 / 25%),
-            rgba(19, 136, 165, 0)
-        );
-    }
-    20%{
-        background-image:  radial-gradient(
-            ellipse 33% 100% at 2% 58%,
-            rgba(135, 246, 79, 25%),
-            rgba(19, 136, 165, 0)
-        );
-    }
-
-    40%{
-        background: radial-gradient(
-            ellipse 33% 100% at 2% 58%,
-            rgba(242, 180, 64, 25%)
-            rgba(19, 136, 165, 0)
-        );
-    }
-    60%{
-        background: radial-gradient(
-            ellipse 33% 100% at 2% 58%,
-            rgba(28, 137, 246, 25%),
-            rgba(19, 136, 165, 0)
-        );
-    }
-
-    80%{
-        background: radial-gradient(
-            ellipse 33% 100% at 2% 58%,
-            rgba(171, 130, 243, 25%),
-            rgba(19, 136, 165, 0)
-        );
-    }
-
-    100% {
-        background: radial-gradient(
-            ellipse 33% 100% at 2% 58%,
-            rgb(28 44 169 / 25%),
-            rgba(19, 136, 165, 0)
-        );
-    }
-}
-
 // $yellow-green: #86F64F;
 // $clear-yellow-green: #C0F679;
 

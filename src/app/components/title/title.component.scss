@@ -45,7 +45,6 @@ nav {
                         font-size: clamp(2rem , 5vw, 3rem);
                         font-weight: 700;
                         color: $purple;
-                        animation: background-rgb 40s infinite;
                     }
                 }
             }
@@ -120,25 +119,4 @@ nav {
             }
         }
 }
-}
-
-@keyframes background-rgb {
-    0% {
-        color: $white;
-    }
-    20%{
-        color: $yellow-green;
-    }
-    40%{
-        color: $yellow-green;
-    }
-    60%{
-        color: $blue;
-    }
-    80%{
-        color: $purple;
-    }
-    100% {
-        color: $white;
-    }
 }
