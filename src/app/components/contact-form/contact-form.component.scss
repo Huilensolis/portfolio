@@ -10,7 +10,7 @@ main {
     .form-container {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 100vh;
+        grid-template-rows: calc(100vh - 2rem);
         gap: 20px;
         height: 100%;
         form {
@@ -55,7 +55,7 @@ main {
             .message-container {
                 display: flex;
                 flex-direction: column;
-                height: 100%;
+                // height: ;
                 gap: 5px;
                 textarea {
                     resize: none;
@@ -138,11 +138,11 @@ main {
         .mail-icon-container {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: start;
             height: calc(100% - 58px - 20px); // 100 - button size:58px - gap:20px
             padding-top: calc(29px + 5px); // we rest the labels size on top - the gap
             width: 100%;
-            height: 100%;
+            // height: 100%;
             grid-column: 2 / 3;
             .mail-figure-container{
                 display: flex;
@@ -197,7 +197,7 @@ main {
                 }
                 .message-preview {
                     padding: 10px 20px;
-                    min-height: 60vh;
+                    // min-height: 60vh;
                     width: 100%;
                     p {
                       max-height: calc(100% - 120px); // Establece una altura máxima
