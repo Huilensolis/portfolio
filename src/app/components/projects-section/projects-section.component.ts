@@ -30,13 +30,7 @@ export class ProjectsSectionComponent {
             description: 'This is a project description',
             githubLink: '',
             technologies: [
-                'angular',
-                'node JS',
-                'boostrap',
-                'express',
-                'sequelize',
-                'passport',
-                'JWT',
+                ''
             ],
         },
         {
@@ -44,11 +38,7 @@ export class ProjectsSectionComponent {
             description: 'This is a project description',
             githubLink: '',
             technologies: [
-                'node JS',
-                'express',
-                'sequelize',
-                'passport',
-                'JWT',
+                ''
             ],
         },
         {
@@ -56,11 +46,7 @@ export class ProjectsSectionComponent {
             description: 'This is a project description',
             githubLink: '',
             technologies: [
-                'node JS',
-                'express',
-                'sequelize',
-                'passport',
-                'JWT',
+                ''
             ],
         },
         {
@@ -68,11 +54,7 @@ export class ProjectsSectionComponent {
             githubLink: '',
             description: 'This is a project description',
             technologies: [
-                'node JS',
-                'express',
-                'sequelize',
-                'passport',
-                'JWT',
+                ''
             ],
         },
         {
@@ -80,11 +62,7 @@ export class ProjectsSectionComponent {
             githubLink: '',
             description: 'This is a project description',
             technologies: [
-                'node JS',
-                'express',
-                'sequelize',
-                'passport',
-                'JWT',
+                ''
             ],
         },
     ];
