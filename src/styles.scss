@@ -78,10 +78,9 @@ a {
 app-root {
     background-image: radial-gradient(
         ellipse 33% 100% at 2% 58%,
-        rgba(151, 145, 224, 0.25),
+        rgba(89, 130, 227, 0.344),
         rgba(19, 136, 165, 0)
     );
-    animation: background-rgb 40s ease-in-out infinite;
     color: $white;
     display: flex;
     flex-direction: column;
