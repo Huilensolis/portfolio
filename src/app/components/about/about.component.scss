@@ -7,7 +7,7 @@ section {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-right: 5vw;
+    padding-right: 15vw;
     h1 {
         color: $white;
     }
@@ -17,7 +17,6 @@ section {
         font-stretch: 50px;
         span {
             font-weight: 400;
-            font-size: 2rem;
             color: $clear-black;
             transition: $default-duration ease-in-out;
         }
@@ -26,7 +25,6 @@ section {
                 color: $white;
             }
         }
-        font-size: 2rem;
         font-weight: 400;
     }
     a {

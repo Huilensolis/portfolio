@@ -14,14 +14,14 @@ nav {
         justify-content: center;
         align-items: flex-start;
         h1 {
-            font-size: clamp(5rem, 6vw, 12rem);
+            font-size: clamp(50px, 6vw, 12rem);
             font-weight: 800;
             color: $white;
         }
         h2 {
             text-align: start;
             font-size: 3rem;
-            font-size: clamp(2rem, 5vw, 3rem);
+            font-size: clamp(30px, 5vw, 3rem);
             font-weight: 700;
             color: $purple;
         }
