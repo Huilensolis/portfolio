@@ -1,15 +1,14 @@
 <section class="section-container" id="skillset">
-    <h1 class="section-title">Skillset</h1>
-
-    <main>
-
-        <section class="language-list">
-            <ul>
-                <li *ngFor="let language of LanguagesList" [class.backend]="language.backend" [class.important]="language.important">
-                    <p tabindex="0">{{language.name}}</p>
-                </li>
-            </ul>
-        </section>
-
-    </main>
+    <h2 class="section-title">Skillset</h2>
+    <section class="language-list">
+        <ul>
+            <li
+                *ngFor="let language of LanguagesList"
+                [class.backend]="language.backend"
+                [class.important]="language.important"
+            >
+                <p tabindex="0">{{ language.name }}</p>
+            </li>
+        </ul>
+    </section>
 </section>

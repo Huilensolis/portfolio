@@ -7,7 +7,7 @@ $default-height: 75vh;
 
 $height: clamp($min-height, $default-height, $max-height);
 
-main {
+section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -50,6 +50,7 @@ main {
                 display: flex;
                 justify-content: flex-start;
                 align-items: flex-start;
+                flex-direction: row;
                 gap: 20px;
                 .email-container,
                 .username-container {
@@ -168,7 +169,7 @@ main {
                         padding: 20px 20px 0 20px;
                         width: 100%;
                         background-color: $black;
-                        h1 {
+                        h2 {
                             font-size: 2rem;
                             color: $white;
                         }
@@ -192,7 +193,7 @@ main {
                     .to {
                         padding: 10px 20px;
                         border-bottom: 1px dashed $gray;
-                        h1 {
+                        h2 {
                             font-size: 1rem;
                             color: gray;
                             span {
@@ -235,7 +236,7 @@ main {
     }
 }
 @media (width < 1300px) {
-    main {
+    section {
         .form-container {
             grid-template-columns: 1fr;
             .message-container {
@@ -258,7 +259,7 @@ main {
     }
 }
 @media (width < 670px) {
-    main {
+    section {
         .form-container {
             form {
                 .info {

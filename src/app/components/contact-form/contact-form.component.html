@@ -1,5 +1,5 @@
-<main id="contact">
-    <h1 class="section-title">Contact</h1>
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
     <section class="form-container">
         <form [formGroup]="contactForm" (submit)="sendEmail($event)" >
             <section class="info">
@@ -86,13 +86,13 @@
             <div class="mail-figure-container">
                 <section class="preview">
                     <section class="email-title-preview">
-                        <h1>Email preview</h1>
+                        <h2>Email preview</h2>
                     </section>
                     <section class="from">
                         <h2>from <span id="name-preview">{{name}} </span> <span id="email-preview">&#60;{{email}}&#62;</span></h2>
                     </section>
                     <section class="to">
-                        <h1>to <span>solishuilencontact@gmail.com</span></h1>
+                        <h2>to <span>solishuilencontact@gmail.com</span></h2>
                     </section>
                 </section>
                 <section class="message-preview">
@@ -115,4 +115,4 @@
         [success]="emailSendingSuccess"
         [display]="displayAlert"
     ></app-alert>
-</main>
+</section>

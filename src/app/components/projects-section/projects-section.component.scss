@@ -1,7 +1,6 @@
 section {
     display: flex;
     flex-direction: column;
-    main {
         ul {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -31,13 +30,11 @@ section {
                 grid-column: 2 span;
             }
         }
-    }
 }
 
 // responsive
 @media (width < 1150px) {
     section {
-        main {
             ul {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -69,6 +66,5 @@ section {
                     grid-row: auto;
                 }
             }
-        }
     }
 }

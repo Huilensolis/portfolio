@@ -8,45 +8,47 @@ section {
     flex-direction: column;
     width: 100%;
     padding-right: 15vw;
-    h1 {
+    h2 {
         color: $white;
     }
-    p {
-        color: $clear-black;
-        line-height: 45px;
-        font-stretch: 50px;
-        span {
-            font-weight: 400;
+    main{
+        p {
             color: $clear-black;
-            transition: $default-duration ease-in-out;
-        }
-        &:hover {
+            line-height: 45px;
+            font-stretch: 50px;
             span {
-                color: $white;
+                font-weight: 400;
+                color: $clear-black;
+                transition: $default-duration ease-in-out;
             }
+            &:hover {
+                span {
+                    color: $white;
+                }
+            }
+            font-weight: 400;
         }
-        font-weight: 400;
-    }
-    a {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: $default-duration ease-in-out;
-        cursor: pointer;
-        &:hover {
-            filter: brightness(80%);
-        }
-        border-radius: 10px;
-        background-color: $white;
-        width: max-content;
-        font-size: 2rem;
-        font-weight: 500;
-        padding: 15px 30px;
-        color: $black;
-        background-color: $white;
-        svg {
-            fill: $black;
+        a {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: $default-duration ease-in-out;
+            cursor: pointer;
+            &:hover {
+                filter: brightness(80%);
+            }
+            border-radius: 10px;
+            background-color: $white;
+            width: max-content;
+            font-size: 2rem;
+            font-weight: 500;
+            padding: 15px 30px;
+            color: $black;
+            background-color: $white;
+            svg {
+                fill: $black;
+            }
         }
     }
 }

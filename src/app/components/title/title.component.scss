@@ -1,9 +1,11 @@
 @import "../../scss-variables/colors";
 @import "../../scss-variables/transition-duration";
 
-nav {
-    height: 60rem;
-    max-height: 100vh;
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
     padding: 50px 0;
     header {
@@ -18,7 +20,7 @@ nav {
             font-weight: 800;
             color: $white;
         }
-        h2 {
+        span {
             text-align: start;
             font-size: 3rem;
             font-size: clamp(30px, 5vw, 3rem);

@@ -36,19 +36,17 @@
             }
         }
     }
-    main {
+    header {
         h2 {
             width: 100%;
             font-size: 2rem;
             text-align: start;
             color: $white;
         }
-        header {
-            width: 100%;
+        width: 100%;
             p {
                 color: $white;
                 font-weight: 400;
             }
         }
-    }
 }
