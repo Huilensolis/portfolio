@@ -12,6 +12,7 @@ import { ProjectTemplateComponent } from './components/project-template/project-
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { TechnologiesComponent } from './components/technologies/technologies.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactFormComponent,
     AlertComponent,
     FooterComponent,
+    TechnologiesComponent,
   ],
   imports: [
     BrowserModule,

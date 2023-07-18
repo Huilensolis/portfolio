@@ -43,6 +43,7 @@
 
     <header>
         <h2>{{ project.title }}</h2>
-        <svg xLink="../../../assets/icons/angular.svg"></svg>
+        <p>{{project.description}}</p>
+        <app-technologies [technologies]="project.technologies" />
     </header>
 </div>

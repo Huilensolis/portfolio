@@ -14,56 +14,44 @@ export class ProjectsSectionComponent {
         technologies: string[];
     }[] = [
         {
-            title: 'Library API REST',
-            description: 'CRUD api to mangage libraries and their books',
-            githubLink: 'https://github.com/Huilensolis/library_API_REST',
-            technologies: [
-                'node JS',
-                'express',
-                'sequelize',
-                'passport',
-                'JWT',
-            ],
+            title: 'Culinary Alchemy',
+            description:
+                'A new way to share recipes online, letting user log in, sign in while posting, deleting, sharing, liking, updating recipes',
+            githubLink: 'https://github.com/CulinaryAlchemy/CulinaryAlchemy',
+            technologies: ['react', 'node', 'express', 'sequelize'],
         },
         {
-            title: 'coming soon',
-            description: 'This is a project description',
-            githubLink: '',
-            technologies: [
-                ''
-            ],
+            title: 'Spotify landing clone',
+            description: 'Vanilla project to maqutate the spotify landing page.',
+            githubLink: 'https://github.com/Huilensolis/Spotify-clone',
+            deployLink: 'https://spotify-clone-vanilla.vercel.app/',
+            technologies: ['html','css'],
         },
         {
-            title: 'coming soon',
-            description: 'This is a project description',
-            githubLink: '',
-            technologies: [
-                ''
-            ],
+            title: 'Memory cards game',
+            description: 'The classic Memory card game',
+            githubLink: 'https://github.com/Huilensolis/Memory-cards-game',
+            deployLink: 'https://memory-cards-game-flax.vercel.app/',
+            technologies: ['html', 'css', 'javascript'],
         },
         {
-            title: 'coming soon',
-            description: 'This is a project description',
-            githubLink: '',
-            technologies: [
-                ''
-            ],
+            title: 'Todo list',
+            description:
+                'A react project to practice the basics of react, componetizing, basic hooks as useEffect, useState and useContext',
+            githubLink: 'https://github.com/Huilensolis/react-todo-app',
+            technologies: ['react', 'css'],
         },
         {
-            title: 'coming soon',
+            title: ' (soon) Read list',
             githubLink: '',
-            description: 'This is a project description',
-            technologies: [
-                ''
-            ],
+            description: 'Book list, where you can select them and add them into your read-list',
+            technologies: ['react', 'tailwind'],
         },
         {
             title: 'coming soon',
             githubLink: '',
             description: 'This is a project description',
-            technologies: [
-                ''
-            ],
+            technologies: [],
         },
     ];
 }
