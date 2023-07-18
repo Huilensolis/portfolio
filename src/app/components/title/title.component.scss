@@ -4,7 +4,7 @@
 section {
     min-height: 100vh;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     width: 100%;
     padding: 50px 0;
@@ -14,14 +14,15 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         h1 {
             font-size: clamp(50px, 6vw, 12rem);
             font-weight: 800;
             color: $white;
+            text-align: center;
         }
         span {
-            text-align: start;
+            text-align: center;
             font-size: 3rem;
             font-size: clamp(30px, 5vw, 3rem);
             font-weight: 700;
