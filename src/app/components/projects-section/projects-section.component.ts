@@ -39,6 +39,7 @@ export class ProjectsSectionComponent {
             description:
                 'A react project to practice the basics of react, componetizing, basic hooks as useEffect, useState and useContext',
             githubLink: 'https://github.com/Huilensolis/react-todo-app',
+            deployLink: 'https://react-todo-app-alpha-ten.vercel.app/',
             technologies: ['react', 'css'],
         },
         {
