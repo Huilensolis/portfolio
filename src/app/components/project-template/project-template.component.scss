@@ -14,11 +14,7 @@
     padding: 10px;
     border: 2px dashed $gray;
     transition: $default-duration ease-in-out;
-    background: radial-gradient(
-        circle farthest-corner at bottom center,
-        #9e76c996 0%,
-        #00000000 100%
-    );
+    background: radial-gradient(circle farthest-corner at bottom center, rgb(158 118 201 / 26%) 0%, rgba(0, 0, 0, 0) 100%);
     background-size: 100%;
     background-position: center center;
     &:hover {
