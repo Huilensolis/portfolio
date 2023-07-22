@@ -37,7 +37,7 @@ section {
     section {
             ul {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
                 grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
                 :nth-child(1) {
                     display: grid;
