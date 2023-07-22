@@ -42,9 +42,16 @@
     </section>
 
     <header>
-        <h3>{{ project.title }}</h3>
-        <p>{{ project.description }}</p>
-        <p *ngIf="project.responsabilities" class="responsabilities-text"><span>Responsibilities:</span> {{ project.responsabilities }}</p>
+        <section>
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.description }}</p>
+        </section>
+        <section *ngIf="project.responsabilities">
+            <h4 class="responsabilities-text">
+                Responsibilities:
+            </h4>
+            <p>{{ project.responsabilities }}</p>
+        </section>
         <app-technologies [technologies]="project.technologies" />
     </header>
 </div>
