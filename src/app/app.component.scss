@@ -2,7 +2,7 @@ app-top-header{
     z-index: 2;
     position: absolute;
 }
-*:not(app-top-header){
+*:not(app-top-header, app-title){
     animation: arriving 1s;
 }
 @keyframes arriving{

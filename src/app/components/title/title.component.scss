@@ -8,7 +8,11 @@ section {
     align-items: center;
     width: 100%;
     padding: 50px 0;
+    background-image: radial-gradient(circle farthest-corner at bottom center, #e1a7ff 0%, #00000000 50%);
+    animation: to-top 1s;
+    filter: brightness(1.3);
     header {
+        animation: to-button 1s;
         height: 100%;
         width: 100%;
         display: flex;
@@ -32,6 +36,9 @@ section {
 }
 // responsive
 @media (width < 1150px) {
+    section{
+        background-image: none;
+    }
     nav {
         ul {
             display: flex;
@@ -53,5 +60,23 @@ section {
                 display: none;
             }
         }
+    }
+}
+@keyframes to-button{
+    from{
+        opacity: 0;
+        transform: translateY(-3rem);
+    } to{
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+@keyframes to-top{
+    from{
+        opacity: 0;
+        transform: translateY(2rem);
+    } to{
+        opacity: 1;
+        transform: translateY(0rem);
     }
 }
