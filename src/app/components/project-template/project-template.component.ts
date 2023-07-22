@@ -11,6 +11,7 @@ export class ProjectTemplateComponent {
         githubLink: string,
         deployLink?: string,
         technologies: string[],
+        responsabilities?: string,
     }
     technologyList: string | undefined = undefined
     ngOnInit(){

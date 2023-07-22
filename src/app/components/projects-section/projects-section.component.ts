@@ -12,20 +12,24 @@ export class ProjectsSectionComponent {
         githubLink: string;
         deployLink?: string;
         technologies: string[];
+        responsabilities?: string;
     }[] = [
         {
             title: 'Culinary Alchemy',
             description:
                 'A new way to share recipes online, letting user log in, sign in while posting, deleting, sharing, liking, updating recipes',
             githubLink: 'https://github.com/CulinaryAlchemy/CulinaryAlchemy',
+            responsabilities:
+                'build backend database, manage api routes, implement api security and authorizations',
             technologies: ['react', 'node', 'express', 'sequelize'],
         },
         {
             title: 'Spotify landing clone',
-            description: 'Vanilla project to maqutate the spotify landing page.',
+            description:
+                'Vanilla project to maqutate the spotify landing page.',
             githubLink: 'https://github.com/Huilensolis/Spotify-clone',
             deployLink: 'https://spotify-clone-vanilla.vercel.app/',
-            technologies: ['html','css'],
+            technologies: ['html', 'css'],
         },
         {
             title: 'Memory cards game',
@@ -45,7 +49,8 @@ export class ProjectsSectionComponent {
         {
             title: ' (soon) Read list',
             githubLink: '',
-            description: 'Book list, where you can select them and add them into your read-list',
+            description:
+                'Book list, where you can select them and add them into your read-list',
             technologies: ['react', 'tailwind'],
         },
         {
