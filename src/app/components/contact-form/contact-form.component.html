@@ -15,7 +15,7 @@
                         [(ngModel)]="name"
                     />
                     <p class="error-p" *ngIf="!contactForm.get('name')?.valid &&  contactForm.get('name')?.touched">
-                        required area*
+                        field required*
                     </p>
                 </section>
 
@@ -31,7 +31,7 @@
                         [(ngModel)]="email"
                     />
                     <p class="error-p" *ngIf="!contactForm.get('email')?.valid && contactForm.get('email')?.touched && !contactForm.get('email')?.dirty">
-                        required area*
+                        field required*f
                     </p>
                     <p class="error-p" *ngIf="!contactForm.get('email')?.valid && contactForm.get('email')?.touched && contactForm.get('email')?.dirty">
                         email format required
@@ -49,7 +49,7 @@
                     [(ngModel)]="message"
                 ></textarea>
                 <p class="error-p" *ngIf="!contactForm.get('message')?.valid && (contactForm.get('message')?.touched || contactForm.get('message')?.dirty)">
-                    {{ contactForm.get('message')?.errors?.['required'] ? 'Area required*' : 'Minimum length is 20 characters.' }}
+                    {{ contactForm.get('message')?.errors?.['required'] ? 'field required*' : 'Minimum length is 20 characters.' }}
                   </p>
             </section>
 

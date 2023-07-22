@@ -11,7 +11,7 @@
     background-image: radial-gradient(
         circle farthest-corner at top center,
         rgb(116 119 255 / 66%) 0%,
-        rgba(0, 0, 0, 0) 79%
+        rgba(0, 0, 0, 0) 70%
     );
 }
 section {
@@ -50,8 +50,8 @@ section {
 }
 // responsive
 @media (width < 1150px) {
-    section {
-        background-image: none;
+    .background-image{
+        z-index: -1;
     }
     nav {
         ul {
