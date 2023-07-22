@@ -2,12 +2,13 @@
 @import "../../scss-variables/transition-duration";
 
 footer {
+    padding: clamp(10px, 10vw, 100px) clamp(30px, 20vw, 26vw);
     display: flex;
     justify-content: center;
     align-items: flex-start;
     justify-content: space-between;
     gap: 20px;
-    padding: clamp(10px, 10vw, 100px);
+    // padding: clamp(10px, 10vw, 100px);
     background-color: transparent;
     border-top: 1px solid $gray;
     .gmail{
