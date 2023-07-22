@@ -94,10 +94,10 @@
                 border-radius: 2px;
                 width: 100%;
                 background-color: $white;
+                transition: $menu-item-duration ease-in-out;
             }
             &.close {
                 :nth-child(1) {
-                    transition: $menu-item-duration ease-in-out;
                     position: absolute;
                     top: 30px;
                     right: 5px;
@@ -107,7 +107,6 @@
                     transform: rotate(-45deg);
                 }
                 :nth-child(2) {
-                    transition: $menu-item-duration ease-in-out;
                     position: absolute;
                     top: 30px;
                     right: 5px;
