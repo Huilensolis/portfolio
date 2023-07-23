@@ -13,6 +13,7 @@
                         formControlName="name"
                         required
                         [(ngModel)]="name"
+                        maxlength="50"
                     />
                     <p class="error-p" *ngIf="!contactForm.get('name')?.valid &&  contactForm.get('name')?.touched">
                         field required*
@@ -29,6 +30,7 @@
                         formControlName="email"
                         required
                         [(ngModel)]="email"
+                        maxlength="320"
                     />
                     <p class="error-p" *ngIf="!contactForm.get('email')?.valid && contactForm.get('email')?.touched && !contactForm.get('email')?.dirty">
                         field required*f

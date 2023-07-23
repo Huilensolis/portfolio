@@ -14,8 +14,8 @@ export class ContactFormComponent {
     contactForm: FormGroup;
     constructor(private emailJsService: EmailJsService) {
         this.contactForm = new FormGroup({
-            name: new FormControl('', [Validators.required]),
-            email: new FormControl('', [Validators.email, Validators.required]),
+            name: new FormControl('', [Validators.required, Validators.maxLength(50)]),
+            email: new FormControl('', [Validators.email, Validators.required, Validators.maxLength(320)]),
             message: new FormControl('', [Validators.required, Validators.minLength(20)]),
         });
     }
