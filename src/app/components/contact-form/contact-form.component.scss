@@ -89,6 +89,7 @@ section {
                 }
             }
             button {
+                min-height: 58px;
                 &.loading {
                     transition: $default-duration ease-in-out;
                     background-color: $blue;

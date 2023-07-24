@@ -2,24 +2,20 @@
 @import "../../scss-variables/transition-duration";
 
 .alert {
+    background-image: radial-gradient(circle farthest-corner at bottom center, rgba(158, 118, 201, 0.26) 0%, rgba(0, 0, 0, 0) 100%);
     background-color: $black;
     height: max-content;
     width: max-content;
-    max-width: 90vw;
 
     border-radius: 12px;
 
-    border: 4px solid;
-    border-color: $blue;
-    &.success {
-        border-color: $yellow-green;
-        outline: 3px solid $black;
-    }
+    border: 3px solid;
+    border-color: $clear-black;
     &.error {
-        border-color: red;
+        border-color: $red;
         .text-container {
             h3 {
-                color: red;
+                color: $red;
             }
             p {
                 color: $white;
@@ -27,7 +23,7 @@
         }
     }
 
-    padding: 15px;
+    padding: 20px;
 
     position: fixed;
     top: 0;
@@ -42,7 +38,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     .icon {
         height: 50px;
         svg {
@@ -51,38 +47,36 @@
         }
         &.error {
             svg {
-                color: red;
+                color: $red;
             }
         }
         &.check {
             svg {
-                color: $yellow-green;
+                color: $blue;
             }
         }
     }
     .text-container {
         h3 {
-            color: $white;
-            font-size: clamp(25px, 5vw, 2rem);
+            color: $blue;
             font-weight: 600;
         }
         p {
-            color: $yellow-green;
-            font-size: clamp(15px, 5vw, 2rem);
+            color: $white;
             font-weight: 500;
         }
     }
 }
 .display {
     transition: $default-duration ease-in-out;
-    transform: translateY(10px); //nav bar height plus 10px
+    transform: translateY(20px); //nav bar height plus 10px
     visibility: visible;
     opacity: 100%;
 }
 @media (width < 1300px) {
     .display {
         transition: $default-duration ease-in-out;
-        transform: translateY(calc(60px + 10px)); //nav bar height plus 10px
+        transform: translateY(calc(60px + 20px)); //nav bar height plus 10px
         visibility: visible;
         opacity: 100%;
     }

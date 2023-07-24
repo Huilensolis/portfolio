@@ -65,6 +65,8 @@
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4"></path>
                  </svg>
+
+                 <svg id="loading" [class.active]="loading === true" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-loader-2"><path _ngcontent-ng-c4244900476="" stroke="none" d="M0 0h24v24H0z" fill="none"></path><path _ngcontent-ng-c4244900476="" d="M12 3a9 9 0 1 0 9 9"></path></svg>
             </button>
         </form>
 
@@ -91,12 +93,12 @@
         title="{{
             emailSendingSuccess
                 ? 'email sent succesfully!'
-                : 'there has been an error'
+                : 'there has been an error!'
         }}"
         message="{{
             emailSendingSuccess
                 ? 'I will reach you soon'
-                : 'try contactying me on my social media'
+                : 'try contacting me on my social media'
         }}"
         [success]="emailSendingSuccess"
         [display]="displayAlert"
