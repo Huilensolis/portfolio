@@ -62,5 +62,12 @@ section {
 @media (width < 1150px) {
     section {
         padding: 0px;
+        main {
+            p {
+                span {
+                    color: $white;
+                }
+            }
+        }
     }
 }
