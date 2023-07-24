@@ -31,7 +31,7 @@ section {
                 width: 100%;
                 border-radius: 8px;
                 padding: 10px;
-                background-color: transparent;
+                background-color: $black;
                 border: 2px solid $clear-black;
                 color: $white;
                 font-size: 1.6rem;
@@ -71,7 +71,7 @@ section {
                     width: 100%;
                     border-radius: 10px;
                     border: 2px solid $clear-black;
-                    background-color: transparent;
+                    background-color: $black;
                     padding: 10px;
                     font-weight: 600;
                     font-size: 1.7rem;
