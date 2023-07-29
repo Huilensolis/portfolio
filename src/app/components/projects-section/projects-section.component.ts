@@ -20,7 +20,7 @@ export class ProjectsSectionComponent {
                 'A new way to share recipes online, letting user log in, sign in while posting, deleting, sharing, liking, updating recipes',
             githubLink: 'https://github.com/CulinaryAlchemy/CulinaryAlchemy',
             responsabilities:
-                'As a Fullstack Developer in this project, I was responsible for building the backend database, managing API routes, implementing API security, and handling authorizations',
+                'As a Backend Developer on a 2 people team, I was responsible for building the backend database, managing API routes, implementing API security, and handling authorizations',
             technologies: ['react', 'node', 'express', 'sequelize'],
         },
         {
