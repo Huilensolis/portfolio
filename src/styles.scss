@@ -83,11 +83,6 @@ a {
     font-size: clamp(1.8rem, 3vw, 3rem);
 }
 app-root {
-    background-image: radial-gradient(
-        ellipse 33% 100% at 2% 58%,
-        rgba(89, 130, 227, 0.252),
-        rgba(19, 136, 165, 0)
-    );
     color: $white;
     display: flex;
     flex-direction: column;

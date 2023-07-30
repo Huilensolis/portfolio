@@ -1,11 +1,21 @@
 <section class="section-container" id="projects">
     <h2 class="section-title">Projects</h2>
 
-        <ul>
-            <li *ngFor="let project of projectList">
-                <a href="{{project.deployLink ? project.deployLink : (project.githubLink ? project.githubLink : '')}}" target="_blank">
-                    <app-project-template [project]="project" />
-                </a>
-            </li>
-        </ul>
+    <ul>
+        <li *ngFor="let project of projectList">
+            <a
+                href="{{
+                    project.deployLink
+                        ? project.deployLink
+                        : project.githubLink
+                        ? project.githubLink
+                        : ''
+                }}"
+                target="_blank"
+            >
+                <app-project-template [project]="project" />
+            </a>
+        </li>
+        <div class="background-gradient"></div>
+    </ul>
 </section>

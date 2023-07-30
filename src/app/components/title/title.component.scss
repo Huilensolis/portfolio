@@ -8,11 +8,7 @@
     top: 0;
     left: 0;
     z-index: 2;
-    background-image: radial-gradient(
-        circle farthest-corner at top center,
-        rgb(116 119 255 / 66%) 0%,
-        rgba(0, 0, 0, 0) 70%
-    );
+    background-image: radial-gradient(circle farthest-corner at top center, rgb(98 132 254 / 66%) 0%, rgba(0, 0, 0, 0) 70%);
 }
 section {
     position: relative;
@@ -42,9 +38,9 @@ section {
         span {
             text-align: center;
             font-size: 3rem;
-            font-size: clamp(30px, 5vw, 3rem);
+            font-size: clamp(30px, 3vw, 3rem);
             font-weight: 700;
-            color: $purple;
+            color: #646fc2;
         }
     }
 }
