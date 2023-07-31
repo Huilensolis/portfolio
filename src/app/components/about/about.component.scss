@@ -43,6 +43,7 @@ section {
             &:hover {
                 filter: brightness(80%);
             }
+            box-shadow: 0px 1px 20px 2px #6877f7c7;
             border-radius: 10px;
             background-color: $white;
             width: max-content;
