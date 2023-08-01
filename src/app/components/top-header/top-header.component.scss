@@ -20,7 +20,8 @@
         align-items: center;
         height: 100%;
         width: 80px;
-        background-image: linear-gradient(to left, $black 60%, transparent 100%);
+        // background-image: linear-gradient(to left, $black 50%, transparent 100%);
+        background-color: $black;
         ul {
             display: flex;
             justify-content: center;

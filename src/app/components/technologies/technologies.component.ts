@@ -10,7 +10,4 @@ export class TechnologieComponent {
     getIcon(technology:string){
         return `../../../assets/icons/${technology}.svg`
     }
-    ngOnInit(){
-        console.log(this.technologie);
-    }
 }
