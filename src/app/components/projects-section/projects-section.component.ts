@@ -20,22 +20,22 @@ export class ProjectsSectionComponent {
                 'A new way to share recipes online, letting user log in, sign in while posting, deleting, sharing, liking, updating recipes',
             githubLink: 'https://github.com/CulinaryAlchemy/CulinaryAlchemy',
             responsabilities:
-                'As a Backend Developer on a 2 people team, I was responsible for building the backend database, managing API routes, implementing API security, and handling authorizations',
+                'As a Backend Developer on a 2 people team, I was responsible for building the database while interacting with it, implementing API routes, API security, authentications and authorizations',
             technologies: ['react', 'node', 'express', 'sequelize'],
         },
         {
-            title: 'Spotify landing clone',
+            title: 'Spotify landing page clone',
             description:
-                'Vanilla project to maqutate the spotify landing page.',
+                'Vanilla project to clone the Spotify landing page',
             githubLink: 'https://github.com/Huilensolis/Spotify-clone',
             deployLink: 'https://spotify-clone-vanilla.vercel.app/',
             technologies: ['html', 'css'],
         },
         {
-            title: 'Memory cards game',
-            description: 'The classic Memory card game',
+            title: 'Knight memory card game',
+            description: 'Classic memory card game, where you must memorize all cards to match them, while running a cronometro to track your mark!',
             githubLink: 'https://github.com/Huilensolis/Memory-cards-game',
-            deployLink: 'https://memory-cards-game-flax.vercel.app/',
+            deployLink: 'https://medieval-memory-card-game.vercel.app/',
             technologies: ['html', 'css', 'javascript'],
         },
         {
