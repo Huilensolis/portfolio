@@ -23,6 +23,13 @@
                 text-decoration: underline #a2abfe;
             }
         }
+        .links{
+            a{
+                svg{
+                    filter: drop-shadow(0px 0px 30px $blue);
+                }
+            }
+        }
     }
     .links {
         display: flex;
@@ -46,7 +53,10 @@
             }
             &:hover {
                 svg {
-                    filter: brightness(80%);
+                    fill: $clear-black;
+                    color: $clear-black;
+                    transform: scale(1.1);
+                    filter: drop-shadow(0px 0px 30px $blue);
                 }
             }
         }
