@@ -96,15 +96,12 @@ section {
                 }
                 &:disabled {
                     filter: brightness(90%);
-                    box-shadow: none;
                 }
-                box-shadow: 0px 4px 20px 2px #6877f757;
                 &:hover {
                     filter: brightness(80%);
                     &:disabled {
                         background-color: $disabled-button;
                         cursor: not-allowed;
-                        box-shadow: none;
                     }
                     &.loading {
                         background-color: $clear-blue;
