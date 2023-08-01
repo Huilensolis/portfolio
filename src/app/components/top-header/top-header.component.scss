@@ -20,6 +20,7 @@
         align-items: center;
         height: 100%;
         width: 80px;
+        background-image: linear-gradient(to left, $black 60%, transparent 100%);
         ul {
             display: flex;
             justify-content: center;
@@ -46,11 +47,8 @@
                     width: 100%;
                     border-radius: 12px;
                     font-size: 1.7rem;
-                    color: $clear-black;
+                    color: $white;
                     font-weight: 500;
-                    // &.active{
-                    //     color: $white;
-                    // }
                 }
             }
         }

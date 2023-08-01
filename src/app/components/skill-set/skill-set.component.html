@@ -1,12 +1,7 @@
-<section class="section-container" id="skillset">
-    <h2 class="section-title">Skillset</h2>
-    <section class="language-list">
-        <ul>
-            <li
-                *ngFor="let language of LanguagesList"
-            >
-                <!-- <app-technologies technologies="language"></app-technologies> -->
-            </li>
-        </ul>
-    </section>
+<section>
+    <ul>
+        <li *ngFor="let language of LanguagesList">
+            <app-technologie [technologie]="language" />
+        </li>
+    </ul>
 </section>
