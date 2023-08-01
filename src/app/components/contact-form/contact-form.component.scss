@@ -95,10 +95,10 @@ section {
                     background-color: $blue;
                 }
                 &:disabled {
-                    filter: brightness(90%);
+                    filter: brightness(60%);
                 }
                 &:hover {
-                    filter: brightness(80%);
+                    filter: brightness(50%);
                     &:disabled {
                         background-color: $disabled-button;
                         cursor: not-allowed;
