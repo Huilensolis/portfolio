@@ -31,9 +31,9 @@ section {
                 width: 100%;
                 border-radius: 8px;
                 padding: 10px;
-                background-color: transparent;
+                background-color: transparent !important;
                 border: 2px solid $clear-black;
-                color: $white;
+                color: $white !important;
                 font-size: 1.6rem;
                 font-weight: 600;
                 transition: $menu-item-duration ease-in-out;
@@ -98,7 +98,7 @@ section {
                     filter: brightness(90%);
                     box-shadow: none;
                 }
-                box-shadow: 0px 1px 20px 2px #6877f7;
+                box-shadow: 0px 4px 20px 2px #6877f757;
                 &:hover {
                     filter: brightness(80%);
                     &:disabled {
@@ -119,7 +119,7 @@ section {
                 background-color: $white;
                 width: 100%;
                 color: $black;
-                font-weight: 500;
+                font-weight: 600;
                 padding: 10px;
                 gap: 10px;
                 svg {
