@@ -61,6 +61,13 @@
             }
         }
     }
+    .technologies-list{
+        display: flex;
+        gap: 10px;
+        li{
+            width: 30px;
+        }
+    }
     header {
         display: flex;
         flex-direction: column;

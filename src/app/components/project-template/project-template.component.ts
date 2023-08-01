@@ -13,8 +13,4 @@ export class ProjectTemplateComponent {
         technologies: string[],
         responsabilities?: string,
     }
-    technologyList: string | undefined = undefined
-    ngOnInit(){
-        this.technologyList = this.project?.technologies.join(', ')
-    }
 }

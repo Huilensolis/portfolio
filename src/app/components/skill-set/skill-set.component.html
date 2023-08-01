@@ -4,10 +4,8 @@
         <ul>
             <li
                 *ngFor="let language of LanguagesList"
-                [class.backend]="language.backend"
-                [class.important]="language.important"
             >
-                <p tabindex="0">{{ language.name }}</p>
+                <!-- <app-technologies technologies="language"></app-technologies> -->
             </li>
         </ul>
     </section>

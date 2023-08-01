@@ -20,10 +20,10 @@ export class SkillSetComponent {
             important: true,
         },
         {
-            name: 'HTML & scss',
+            name: 'node',
         },
         {
-            name: 'node  & express',
+            name: 'express',
             backend: true,
         }
     ]
