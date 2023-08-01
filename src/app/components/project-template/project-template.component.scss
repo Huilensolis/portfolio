@@ -15,28 +15,29 @@
     transition: $default-duration ease-in-out;
     background-size: 100%;
     background-position: center center;
+
     &:hover {
         filter: brightness(120%);
-        header{
-            h3{
+
+        header {
+            h3 {
                 text-shadow: 4px 11px 20px #6877f7;
                 text-decoration: underline #a2abfe;
             }
         }
-        .links{
-            a{
-                svg{
-                    filter: drop-shadow(0px 0px 30px $blue);
-                }
-            }
+
+        .links {
+            filter: drop-shadow(0px 0px 20px $blue);
         }
     }
+
     .links {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
         align-items: center;
         gap: 10px;
+
         a {
             border-radius: 12px;
             display: flex;
@@ -44,43 +45,50 @@
             align-items: center;
             color: $white;
             font-size: 1.7rem;
+
             svg {
                 transition: $menu-item-duration ease-in-out;
-                fill: $white;
+                color: $white;
                 height: 1.9rem;
                 width: 2rem;
                 font-size: 2rem;
             }
+
             &:hover {
                 svg {
-                    fill: $clear-black;
-                    color: $clear-black;
+                    color: $blue;
                     transform: scale(1.1);
-                    filter: drop-shadow(0px 0px 30px $blue);
                 }
             }
         }
     }
-    .technologies-list{
+
+    .technologies-list {
         display: flex;
         gap: 10px;
-        li{
+
+        li {
             width: 30px;
         }
     }
+
     header {
         display: flex;
         flex-direction: column;
         gap: 10px;
+
         h3 {
             width: 100%;
             text-align: start;
             color: $white;
         }
+
         h4 {
             color: $white;
         }
+
         width: 100%;
+
         p {
             color: $white;
             font-weight: 400;
@@ -88,6 +96,7 @@
         }
     }
 }
+
 app-technologies {
     margin-top: 5px;
 }

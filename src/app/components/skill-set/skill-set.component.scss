@@ -16,11 +16,6 @@ section {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    &:hover{
-        ul{
-            animation-play-state: paused;
-        }
-    }
     ul {
         display: flex;
         height: 100%;
