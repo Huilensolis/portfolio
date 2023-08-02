@@ -2,10 +2,11 @@
 @import "../../scss-variables/transition-duration";
 
 .background-image {
+    animation: to-button 1s;
     position: absolute;
     height: 100dvh;
     width: 100%;
-    top: 0;
+    top: 80px;
     left: 0;
     z-index: 2;
     background-image: radial-gradient(circle farthest-corner at top center, rgb(98 132 254 / 66%) 0%, rgba(0, 0, 0, 0) 70%);
@@ -75,7 +76,7 @@ section {
 @keyframes to-button {
     from {
         opacity: 0;
-        transform: translateY(-3rem);
+        transform: translateY(-10vh);
     }
     to {
         opacity: 1;

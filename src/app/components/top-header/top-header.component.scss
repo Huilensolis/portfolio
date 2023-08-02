@@ -8,7 +8,6 @@
     top: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     background-color: transparent;
 
     .mobile-menu {
@@ -16,7 +15,7 @@
     }
 
     #header-nav {
-        position: fixed;
+        position: sticky;
         top: 0;
         left: 0;
         width: 100vw;
@@ -27,7 +26,7 @@
         height: 80px;
         background-color: $black;
         padding: 0 clamp(20px, 10vw, 20vw);
-
+        border-bottom: 1px solid $gray;
         .href-home {
             color: $white;
             font-size: 2rem;
@@ -63,7 +62,7 @@
                     width: 100%;
                     border-radius: 12px;
                     font-size: 1.7rem;
-                    color: $white;
+                    color: $clear-black;
                     font-weight: 500;
                 }
             }
@@ -174,12 +173,10 @@
 
 @keyframes arriving {
     from {
-        opacity: 0;
-        transform: translateY(-2rem);
+        transform: translateY(-10vh);
     }
 
     to {
-        opacity: 1;
         transform: translateY(0);
     }
 }
