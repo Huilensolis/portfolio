@@ -34,7 +34,7 @@ section {
                 }
             }
             app-technologie {
-                transition: $default-duration;
+                transition: $default-duration ease-in-out;
                 display: inline-block;
                 width: $box-width;
                 filter: grayscale(100%);
