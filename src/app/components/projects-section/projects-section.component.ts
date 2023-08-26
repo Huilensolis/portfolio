@@ -17,10 +17,10 @@ export class ProjectsSectionComponent {
         {
             title: 'Culinary Alchemy',
             description:
-                'A new way to share recipes online, letting user log in, sign in while posting, deleting, sharing, liking, updating recipes',
+                'A new way to share recipes online, letting users log in, sign in while posting, deleting, sharing, liking, updating recipes',
             githubLink: 'https://github.com/CulinaryAlchemy/CulinaryAlchemy',
             responsabilities:
-                'As a Backend Developer on a 2 people team, I was responsible for building the database while interacting with it, implementing API routes, API security, authentications and authorizations',
+                'As a Backend Developer on a 2 people team, I was responsible for building the database , it services and controllers, implementing API routes, API security, authentications and authorizations',
             technologies: ['react', 'node', 'express', 'sequelize'],
         },
         {
