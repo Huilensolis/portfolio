@@ -7,6 +7,7 @@
         </figure>
     </nav>
     <nav id="header-nav" [class.active]="menuActive === true">
+        <a href="#home" class="href-home">h</a>
         <ul>
            <li *ngFor="let item of navItems">
                 <a href="{{'#' + item.title}}" (click)="!menuActive ? SetNavItemsState(item.title) : toggleMenuState()" [class.active]="item.title === actualSectionInNav" >
