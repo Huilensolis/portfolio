@@ -19,8 +19,9 @@ export class ProjectsSectionComponent {
             description:
                 'A new way to share recipes online, letting users log in, sign in while posting, deleting, sharing, liking, updating recipes',
             githubLink: 'https://github.com/CulinaryAlchemy/CulinaryAlchemy',
+            deployLink: 'https://culinary-alchemy-web-app.vercel.app/',
             responsabilities:
-                'As a Backend Developer on a 2 people team, I was responsible for building the database , it services and controllers, implementing API routes, API security, authentications and authorizations',
+                'As a Backend Developer on a 2 people team, I was responsible for building the database , its services and controllers, implementing API routes, API security, authentications and authorizations',
             technologies: ['react', 'node', 'express', 'sequelize'],
         },
         {

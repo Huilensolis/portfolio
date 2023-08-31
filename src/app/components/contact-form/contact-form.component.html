@@ -18,7 +18,7 @@
                         required [(ngModel)]="email" maxlength="320" />
                     <p class="error-p"
                         *ngIf="!contactForm.get('email')?.valid && contactForm.get('email')?.touched && !contactForm.get('email')?.dirty">
-                        field required*f
+                        field required*
                     </p>
                     <p class="error-p"
                         *ngIf="!contactForm.get('email')?.valid && contactForm.get('email')?.touched && contactForm.get('email')?.dirty">

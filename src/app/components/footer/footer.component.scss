@@ -10,52 +10,41 @@ footer {
     padding: clamp(10px, 10vw, 100px) clamp(20px, 10vw, 20vw);
     background-color: transparent;
     border-top: 1px solid $gray;
-    .gmail{
+    .contact{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         gap: 10px;
-        a{
-            display: flex;
-            flex-wrap: wrap;
-            transition: $default-duration ease-in-out;
-            p{
-                font-size: 1.5rem;
-            }
-        }
-        &:hover{
-            a{
-                color: $blue;
-            }
-        }
     }
     .social-links-container{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         gap: 10px;
-        ul{
-            gap: 10px;
+    }
+    ul{
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        li{
             display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            li{
-                display: flex;
-                gap: 10px;
-                &:hover{
-                    a{
-                        transition: 0.5s;
-                        color: $blue;
-                    }
-                }
+            gap: 10px;
+            &:hover{
                 a{
-                    height: 100%;
-                    width: 100%;
-                    color: $white;
-                    transition: $default-duration ease-in-out;
-                    svg{
-                        height: 1.5rem;
-                    }
+                    transition: 0.5s;
+                    color: $blue;
+                }
+            }
+            a{
+                display: flex;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                color: $white;
+                transition: $default-duration ease-in-out;
+                svg{
+                    height: 1.5rem;
                 }
             }
         }

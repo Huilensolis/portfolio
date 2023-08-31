@@ -19,7 +19,6 @@
         top: 0;
         left: 0;
         width: 100vw;
-        animation: arriving 1s;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -72,7 +71,6 @@
 
 @media (width < 1150px) {
     .nav-top-container {
-        animation: arriving 1s;
         background-color: transparent;
         height: 60px;
         left: 0;
