@@ -8,11 +8,7 @@
     top: 80px;
     left: 0;
     z-index: -1;
-    background-image: radial-gradient(
-        circle farthest-corner at top center,
-        rgb(117 56 232 / 55%) 0%,
-        rgba(0, 0, 0, 0) 70%
-    );
+    background-image: radial-gradient(circle farthest-corner at top center,rgb(56 58 232 / 55%) 0%,rgba(0,0,0,0) 70%);
 }
 section {
     position: relative;
