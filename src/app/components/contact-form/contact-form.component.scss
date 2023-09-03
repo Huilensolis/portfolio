@@ -151,6 +151,7 @@ section {
             padding-top: calc(29px + 5px);
             width: 100%;
             grid-column: 2 / 3;
+            position: relative;
             .mail-figure-container {
                 display: flex;
                 flex-direction: column;
@@ -235,6 +236,23 @@ section {
     }
     to {
         transform: rotate(359deg);
+    }
+}
+@media (width > 1200px){
+    .mail-icon-container{
+        &::after {
+                content: "";
+                width: 200px;
+                height: 200px;
+                border-radius: 20%;
+                background-color: #afb3fafb;
+                position: absolute;
+                filter: blur(40px);
+                top: -20px;
+                transform: rotate(-70deg);
+                right: 150px;
+                z-index: -1;
+            }
     }
 }
 @media (width < 1300px) {

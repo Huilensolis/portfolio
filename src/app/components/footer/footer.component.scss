@@ -2,6 +2,17 @@
 @import "../../scss-variables/transition-duration";
 
 footer {
+    &::after {
+        content: "";
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        background-color: #545ccc;
+        position: absolute;
+        filter: blur(60px);
+        left: -200px;
+        z-index: -1;
+    }
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -10,59 +21,60 @@ footer {
     padding: clamp(10px, 10vw, 100px) clamp(20px, 10vw, 20vw);
     background-color: transparent;
     border-top: 1px solid $gray;
-    .contact{
+    .contact {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         gap: 10px;
     }
-    .social-links-container{
+    .social-links-container {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         gap: 10px;
     }
-    ul{
+    ul {
         gap: 10px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        li{
+        li {
             display: flex;
             gap: 10px;
-            &:hover{
-                a{
+            &:hover {
+                a {
                     transition: 0.5s;
                     color: $blue;
                 }
             }
-            a{
+            a {
                 display: flex;
+                flex-wrap: wrap;
                 align-items: center;
                 height: 100%;
                 width: 100%;
                 color: $white;
                 transition: $default-duration ease-in-out;
-                svg{
+                svg {
                     height: 1.5rem;
                 }
             }
         }
     }
 }
-a{
+a {
     font-size: 1.5rem;
     color: $white;
 }
-span{
+span:not(.non-selectable) {
     font-weight: 600;
     color: $white;
     font-size: 2rem;
 }
 
 // responsive
-@media (width < 950px){
-    footer{
+@media (width < 950px) {
+    footer {
         display: flex;
         flex-direction: column;
     }
