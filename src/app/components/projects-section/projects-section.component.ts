@@ -25,11 +25,12 @@ export class ProjectsSectionComponent {
             technologies: ['react', 'node', 'express', 'sequelize'],
         },
         {
-            title: 'Spotify landing page clone',
-            description: 'Vanilla project to clone the Spotify landing page',
-            githubLink: 'https://github.com/Huilensolis/Spotify-clone',
-            deployLink: 'https://spotify-clone-vanilla.vercel.app/',
-            technologies: ['html', 'css'],
+            title: 'Owr',
+            githubLink: 'https://github.com/Huilensolis/owr',
+            deployLink: 'https://owr-french.vercel.app/',
+            description:
+                'A Duolingo mini clone. Created with the objective to try the global state manager library Zustand.',
+            technologies: ['react', 'typescript', 'tailwind'],
         },
         {
             title: 'Knight memory card game',
@@ -48,17 +49,18 @@ export class ProjectsSectionComponent {
             technologies: ['react', 'css'],
         },
         {
+            title: 'Spotify landing page clone',
+            description: 'Vanilla project to clone the Spotify landing page',
+            githubLink: 'https://github.com/Huilensolis/Spotify-clone',
+            deployLink: 'https://spotify-clone-vanilla.vercel.app/',
+            technologies: ['html', 'css'],
+        },
+        {
             title: ' (soon) Read list',
             githubLink: '',
             description:
                 'Book list, where you can select them and add them into your read-list',
             technologies: ['react', 'tailwind'],
-        },
-        {
-            title: 'coming soon',
-            githubLink: '',
-            description: 'This is a project description',
-            technologies: [],
         },
     ];
 }
