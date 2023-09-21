@@ -49,18 +49,16 @@ export class ProjectsSectionComponent {
             technologies: ['react', 'css'],
         },
         {
-            title: 'Spotify landing page clone',
-            description: 'Vanilla project to clone the Spotify landing page',
-            githubLink: 'https://github.com/Huilensolis/Spotify-clone',
-            deployLink: 'https://spotify-clone-vanilla.vercel.app/',
-            technologies: ['html', 'css'],
+            title: 'Soon',
+            githubLink: '',
+            description: 'Coming soon',
+            technologies: [],
         },
         {
-            title: ' (soon) Read list',
+            title: 'Soon',
             githubLink: '',
-            description:
-                'Book list, where you can select them and add them into your read-list',
-            technologies: ['react', 'tailwind'],
+            description: 'Cooming soon',
+            technologies: [],
         },
     ];
 }
